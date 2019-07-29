@@ -25,3 +25,14 @@ Screenshoots
 
 Screenshoots
 
+![Dashboard_1](https://user-images.githubusercontent.com/9846274/62088712-2d687080-b25e-11e9-8bff-7b5e98fd26d2.png)
+
+![Dashboard_6](https://user-images.githubusercontent.com/9846274/62088711-2d687080-b25e-11e9-858a-e7fc0ce2c3ce.png)
+
+![Dashboard_2](https://user-images.githubusercontent.com/9846274/62088713-2e010700-b25e-11e9-9760-f3032654fe25.png)
+
+![Dashboard_3](https://user-images.githubusercontent.com/9846274/62088708-2ccfda00-b25e-11e9-97f8-d7daed36a4a8.png)
+
+![Dashboard_4](https://user-images.githubusercontent.com/9846274/62088709-2d687080-b25e-11e9-8b9b-b72fe768f639.png)
+
+![Dashboard_5](https://user-images.githubusercontent.com/9846274/62088710-2d687080-b25e-11e9-8e3b-44aa17223b81.png)
