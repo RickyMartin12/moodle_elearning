@@ -21,4 +21,7 @@ Screenshoots
 
 ![Intro_3](https://user-images.githubusercontent.com/9846274/62087422-8da8e380-b259-11e9-94e2-642e6345896c.png)
 
+### 3 - Dashboard Page
+
+Screenshoots
 
