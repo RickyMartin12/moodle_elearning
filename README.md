@@ -78,3 +78,45 @@ Screenshoots
 
 ![Questionnaire_2](https://user-images.githubusercontent.com/9846274/62145979-546d8380-b2ec-11e9-9ec0-e7b4863b7d48.png)
 
+### 8 - Blogs & Comments Page
+
+Screenshoots
+
+#### 8.1 - Blogs Content
+
+![Blogs_Comments_1](https://user-images.githubusercontent.com/9846274/62149371-79192980-b2f3-11e9-8849-064d7319c176.png)
+
+#### 8.2 - Comment Content
+
+![Blogs_Comments_2](https://user-images.githubusercontent.com/9846274/62149372-79192980-b2f3-11e9-92f6-814e97fd41a7.png)
+
+#### 8.3 - Add New Comment
+
+![Blogs_Comments_3](https://user-images.githubusercontent.com/9846274/62149370-79192980-b2f3-11e9-8da0-7022659f202a.png)
+
+#### 8.4 - Add New Blog
+
+![Blogs_Comments_4](https://user-images.githubusercontent.com/9846274/62149911-b336fb00-b2f4-11e9-8ee9-9b3760cad557.png)
+
+#### 8.5 - Edit Comment
+
+![Blogs_Comments_5](https://user-images.githubusercontent.com/9846274/62151142-90f2ac80-b2f7-11e9-915a-1c5f57422966.png)
+
+#### 8.6 - Edit Blog
+
+![Blogs_Comments_6](https://user-images.githubusercontent.com/9846274/62151143-918b4300-b2f7-11e9-97fd-65d8e3d02690.png)
+
+#### 8.7 - Erase Comment
+
+![Blogs_Comments_7](https://user-images.githubusercontent.com/9846274/62151144-918b4300-b2f7-11e9-8430-9a263a4c536c.png)
+
+#### 8.8 - Erase Blog
+
+![Blogs_Comments_8](https://user-images.githubusercontent.com/9846274/62151145-918b4300-b2f7-11e9-8d1a-b2c0749ef04d.png)
+
+### 9 - Calendar Tasks Page
+
+Screenshoots
+
+
+
