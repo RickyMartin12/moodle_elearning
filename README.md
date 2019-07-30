@@ -122,6 +122,22 @@ Screenshoots
 
 #### 9.1 - Add New Event Calendar Page
 
+![Calendar_2](https://user-images.githubusercontent.com/9846274/62171504-fd38d480-b326-11e9-8f94-4d3e4b72c7ea.png)
+
+#### 9.2 - Add Event in the Select Date on Calendar
+
+![Calendar_3](https://user-images.githubusercontent.com/9846274/62171502-fca03e00-b326-11e9-8a51-985b47f14f2e.png)
+
+#### 9.3 - Edit & Delete Event Calendar
+
+![Calendar_4](https://user-images.githubusercontent.com/9846274/62171503-fd38d480-b326-11e9-8b01-87ca0c4ed958.png)
+
+### 10 - Categories Page
+
+![Categories_1](https://user-images.githubusercontent.com/9846274/62171615-789a8600-b327-11e9-8f96-4101306e2e81.png)
+
+
+
 
 
 
