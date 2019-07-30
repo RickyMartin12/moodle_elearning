@@ -41,4 +41,20 @@ Screenshoots
 
 Screenshoots
 
+![Profile_1](https://user-images.githubusercontent.com/9846274/62092282-7fb08e00-b26c-11e9-8b6e-55e69e761210.png)
 
+![Profile_2](https://user-images.githubusercontent.com/9846274/62092283-7fb08e00-b26c-11e9-9a1e-b5299ab91e1f.png)
+
+![Profile_3](https://user-images.githubusercontent.com/9846274/62092284-80492480-b26c-11e9-85b3-c32f0533a642.png)
+
+![Profile_4](https://user-images.githubusercontent.com/9846274/62092285-80492480-b26c-11e9-8a2f-ffef733ffeff.png)
+
+### 5 - Grades page
+
+Screenshoots
+
+![Grades_1](https://user-images.githubusercontent.com/9846274/62093201-4c6ffe00-b270-11e9-8f2b-e3f2db2c95df.png)
+
+![Grades_2](https://user-images.githubusercontent.com/9846274/62093202-4d089480-b270-11e9-9ae2-eb2a71939818.png)
+
+![Grades_3](https://user-images.githubusercontent.com/9846274/62093200-4c6ffe00-b270-11e9-8762-4a5cd25777b3.png)
