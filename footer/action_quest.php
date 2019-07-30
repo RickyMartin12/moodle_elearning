@@ -82,7 +82,7 @@ $html = '
 
 <img src="'.$img1.'" class="center">
 <div class="botm"></div>
-<h3 style="text-align: center;" class="bolder"> Toyota Cars Rental - Satisfation Questionnaire </h3>
+<h3 style="text-align: center;" class="bolder"> Satisfation Questionnaire </h3>
 <div class="botm"></div>
 <div class="line-bord">
 <div class="modal-header title-black-white">
