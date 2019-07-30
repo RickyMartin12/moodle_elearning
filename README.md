@@ -58,3 +58,23 @@ Screenshoots
 ![Grades_2](https://user-images.githubusercontent.com/9846274/62093202-4d089480-b270-11e9-9ae2-eb2a71939818.png)
 
 ![Grades_3](https://user-images.githubusercontent.com/9846274/62093200-4c6ffe00-b270-11e9-8762-4a5cd25777b3.png)
+
+
+### 6 - Definitions Page
+
+Screenshoots
+
+![Definitions_1](https://user-images.githubusercontent.com/9846274/62145461-6c90d300-b2eb-11e9-9b63-d61367a296c7.png)
+
+![Definitions_2](https://user-images.githubusercontent.com/9846274/62145463-6c90d300-b2eb-11e9-9b02-1c1a15749e54.png)
+
+![Definitions_3](https://user-images.githubusercontent.com/9846274/62145459-6bf83c80-b2eb-11e9-9c47-0a7327b61981.png)
+
+### 7 - Questionnaire Page
+
+Screenshoots
+
+![Questionnaire_1](https://user-images.githubusercontent.com/9846274/62145553-94803680-b2eb-11e9-8ea0-2672485579ee.png)
+
+
+
