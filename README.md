@@ -138,9 +138,11 @@ Screenshoots
 
 #### 10.1 - View Categories And Courses Categories Page
 
+![Categories_2](https://user-images.githubusercontent.com/9846274/62205555-9bf51d80-b387-11e9-8ef2-951cd47e637d.png)
 
+#### 10.2 - View Category Description Page
 
-
+![Categories_3](https://user-images.githubusercontent.com/9846274/62205556-9bf51d80-b387-11e9-8fd1-6c0197ba111c.png)
 
 
 
