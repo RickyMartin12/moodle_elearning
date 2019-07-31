@@ -2,6 +2,8 @@
 
 ## Functions Lists in Web App
 
+## User Page (User Permissions)
+
 ### 1 - Login User
 
 Screenshoots
@@ -134,6 +136,8 @@ Screenshoots
 
 ### 10 - Categories Page
 
+Screenshoots
+
 ![Categories_1](https://user-images.githubusercontent.com/9846274/62171615-789a8600-b327-11e9-8f96-4101306e2e81.png)
 
 #### 10.1 - View Categories And Courses Categories Page
@@ -143,6 +147,19 @@ Screenshoots
 #### 10.2 - View Category Description Page
 
 ![Categories_3](https://user-images.githubusercontent.com/9846274/62205556-9bf51d80-b387-11e9-8fd1-6c0197ba111c.png)
+
+### 11 - Chat Page
+
+Screenshoots
+
+![Chat_1](https://user-images.githubusercontent.com/9846274/62211604-e4680780-b396-11e9-9473-0defeefdb9ab.png)
+
+![Chat_2](https://user-images.githubusercontent.com/9846274/62211605-e5009e00-b396-11e9-88a9-81f925329ded.png)
+
+![Chat_3](https://user-images.githubusercontent.com/9846274/62211606-e5009e00-b396-11e9-9d72-9586c9833f37.png)
+
+## Admin Page (Administrator Permissions)
+
 
 
 
