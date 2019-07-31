@@ -160,6 +160,17 @@ Screenshoots
 
 ## Admin Page (Administrator Permissions)
 
+### 12 - Registry User
+
+Screenshoots
+
+![Registry](https://user-images.githubusercontent.com/9846274/62236349-d205c200-b3c6-11e9-9b89-1f6cd6edd7bc.png)
+
+### 13 - Notifications Users and Administrators Page
+
+![Privileges_Users](https://user-images.githubusercontent.com/9846274/62253477-e01b0900-b3ed-11e9-8473-dd237c8d81ee.png)
+
+### 14 - Users Lists Page
 
 
 
