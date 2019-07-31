@@ -136,7 +136,7 @@ Screenshoots
 
 ![Categories_1](https://user-images.githubusercontent.com/9846274/62171615-789a8600-b327-11e9-8f96-4101306e2e81.png)
 
-
+#### 10.1 - View Categories And Courses Categories Page
 
 
 
