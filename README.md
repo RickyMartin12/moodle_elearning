@@ -1,5 +1,11 @@
 # Moodle Elearning Conceptek a Shiji Group
 
+First Install Xampp or Wamp Server:
+
+Wamp Server - wamp/www/<moodle_elearning>
+
+Xampp - xampp/htdocs/<moodle_elearning>
+
 ## Functions Lists in Web App
 
 ## User Page (User Permissions)
