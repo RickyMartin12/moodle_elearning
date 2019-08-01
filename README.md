@@ -216,9 +216,32 @@ Screenshoots
 
 #### 17.1 - List Categories by Courses
 
-![Edit_Categories_1](https://user-images.githubusercontent.com/9846274/62333906-65212380-b4bd-11e9-8155-02e151dba318.png)
+![Edit_Categories_1](https://user-images.githubusercontent.com/9846274/62333984-ae717300-b4bd-11e9-8d75-012d61cb8cae.png)
 
 #### 17.2 - Edit Categories by Courses
+
+![Edit_Categories_2](https://user-images.githubusercontent.com/9846274/62334019-d95bc700-b4bd-11e9-8ab5-c5ee9d224edf.png)
+
+#### 17.3 - Delete Categories by Course
+
+![Edit_Categories_3](https://user-images.githubusercontent.com/9846274/62334062-0314ee00-b4be-11e9-9c0d-2d77b952b733.png)
+
+### 18 - Edit Grades Page
+
+Screenshoots
+
+#### 18.1 - List Grades Courses Page
+
+![Edit_Grades_1](https://user-images.githubusercontent.com/9846274/62334331-3310c100-b4bf-11e9-9f63-f4e177332738.png)
+
+#### 18.2 - Edit Grades Courses Page
+
+![Edit_Grades_2](https://user-images.githubusercontent.com/9846274/62334388-62bfc900-b4bf-11e9-9282-8718aeb8fe19.png)
+
+#### 18.3 - Delete Grades Courses Page
+
+![Edit_Grades_3](https://user-images.githubusercontent.com/9846274/62334389-62bfc900-b4bf-11e9-91a3-3175e53fbd3f.png)
+
 
 
 
