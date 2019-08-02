@@ -242,7 +242,11 @@ Screenshoots
 
 ![Edit_Grades_3](https://user-images.githubusercontent.com/9846274/62334389-62bfc900-b4bf-11e9-91a3-3175e53fbd3f.png)
 
+### 19 - Newsletter 
 
+Screenshoots
+
+![Contact](https://user-images.githubusercontent.com/9846274/62335006-e7134b80-b4c1-11e9-8481-6e730803be95.png)
 
 
 
