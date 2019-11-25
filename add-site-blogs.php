@@ -328,7 +328,6 @@
 		function removeFile(i)
     	{
     		var conf_blog = $("#cont_fil_"+i+" > #fil_blog > span").html();
-    		console.log(conf_blog);
     		removeA(names, conf_blog);
 
     		var path = "upload/"+conf_blog;
@@ -337,7 +336,6 @@
 		      type: 'post',
 		      data: {path: path},
 		      success: function(response){
-		 		console.log(response);
 		        // Changing image source when remove
 		        if(response == 1){
 		          $('.debug-url').html('File was removed successfully');
@@ -364,7 +362,6 @@
         	var s = '';
         	var t = '';
         	var ssa = '';
-        	console.log ("Ficheiros: ");
         	for (i=0; i<len_edit; i++)
         	{
         		s = $($("[id='fil_blog']")[i]).html();
@@ -389,9 +386,6 @@
     		var conteudo_blog = tinyMCE.editors[$('#content_blog').attr('id')].getContent();
     		var user_id = <?php echo $_COOKIE['id']; ?>; 
 
-
-    		console.log(files_a);
-
     		datav = "action=1&title="+title+"&user_id="+user_id+"&conteudo="+escape(conteudo_blog)+"&ficheiros="+escape(files_a);
 
     		$('.back').show()
@@ -403,7 +397,6 @@
 		        cache: false,
 		        success: function(data) {
 		          $('.back').fadeOut();
-		          console.log(data);
 		          arr = [];
 		          arr = JSON.parse(data);
 		          if (arr.error){

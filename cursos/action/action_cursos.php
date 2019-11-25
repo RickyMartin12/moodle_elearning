@@ -10,7 +10,7 @@ switch ($_POST['action']){
 	case '1':
 
 		$obter_comp=" SELECT * FROM cursos WHERE 1";
-    	$var = "";
+    	$var = array();
 	    $result = mysqli_query($conn, $obter_comp);
 	    while($obj = mysqli_fetch_object($result)) 
 	    {
@@ -79,7 +79,7 @@ switch ($_POST['action']){
 	case '4':
 
 		$obter_comp=" SELECT DISTINCT cursos FROM cursos WHERE 1";
-    	$var = "";
+        $var = array();
 	    $result = mysqli_query($conn, $obter_comp);
 	    while($obj = mysqli_fetch_object($result)) 
 	    {
@@ -175,7 +175,7 @@ switch ($_POST['action']){
 	case '7':
 
 		$nome_curso = $_POST['nome_curso'];
-		$var = "";
+		$var = array();
 	    $obter_comp='SELECT sub_cursos FROM cursos WHERE cursos = "'.$nome_curso.'"';
 	    $result = mysqli_query($conn, $obter_comp);
 	    while($obj = mysqli_fetch_object($result)) {

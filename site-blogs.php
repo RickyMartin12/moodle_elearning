@@ -379,7 +379,6 @@
           }
           else 
           {
-            console.log(arr);
             for(i=0;i<arr.length;i++)
             {
 
@@ -444,18 +443,12 @@
 				files = arr[i].files;
 				list_files (id, files);
 
-			} 
-
+			}
 			for (i=0; i<arr.length;i++)
 			{
 				id = arr[i].id;		
 				comments_lists (id);
-			} 
-
-
-            
-            
-            
+			}
           }
         },
         error:function(data){
@@ -480,19 +473,12 @@
     cache:false,
     success: function(data){
       $('.back').fadeOut();
-
       arr = JSON.parse(data);
-      console.log(arr);
-      
-
-
           if (arr.length == null || arr.length < 1 )
           {
-            
             $('#Modalko .debug-url').html('Not exists of content of comment <?php echo $_COOKIE["username"]; ?>. Create first');
             $("#Modalko").modal('show');
              $('.back').fadeOut();
-
              var obj2 = document.createElement("audio");
 								  obj2.src = "/moodle/Sound/error.mp3";
 								  obj2.volume = 0.1;
@@ -508,15 +494,9 @@
           {
             for(i=0;i<arr.length;i++)
             {
-
 							id_com = arr[i].id;
-
 							d += '<div class="col-md-12"><div class="line-bord"><div class="modal-header title-black"><h4 class="modal-title"><i class="fas fa-comment"></i> RE: <font id="title_comment_'+id_com+'">'+arr[i].title+'</font></h4></div><div class="row"><div class="col-md-12"><br><br><div class="col-md-4 col-xs-12" style="text-align: center"><img src="images/users/'+arr[i].logotipo+'" alt="" width=150" height="150" style="border-radius: 100px;"><br><br><h5 style="font-weight: bold;"><font id="user-acton">'+arr[i].nome+'</font></h5><div class="botter2"></div></div><div class="col-md-8 col-xs-12"><font class="date-align"><h5 style="text-align: center; font-weight: bold;" ><i class="fas fa-calendar"></i> '+arr[i].data_pub+'</h5></font><br><br><font class="date-align"><h5 style="text-align: center; font-weight: bold;"><i class="fas fa-clock"></i>'+arr[i].hora_pub+'</h5></font></div><br><br><div class="col-md-12"><h5 class="col-xs-12 w3-padding-8 w3-card-2 align_div"><i class="fas fa-comment"></i>&nbsp;&nbsp;Comment</h5></div><div class="col-md-12"><font id="comment_acton_'+id_com+'">'+arr[i].com+'</font></div></div></div></div><div class="panel-footer title-black-white"><p style="text-align:right;"><button class="btn btn-info btn-clear" onclick="editar_com('+id_com+');" id="editar_com_'+id_com+'"><i class="fa fa-edit"></i><font class="hidden-xs"> Edit Comment</font></button> <button class="btn btn-danger" id="erase_com_'+id_com+'" onclick="remover_com('+id_com+');"><i class="fas fa-trash"></i><font class="hidden-xs"> Erase Comment</font></button></p></div><div class="botter2"></div></div><br><br>';
-
-
 							$("#comment_blog_"+id).html(d);
-
-							
 			}
 			for (i=0;i<arr.length;i++)
 			{
@@ -662,22 +642,14 @@
 		}
   		
   		$("#files_blogs").change(function() {
-  			
-
-		    
 		    for (var i = 0; i < $(this).get(0).files.length; ++i) {
 		        names.push($(this).get(0).files[i].name);
 		    }
 		    var list_files = '';
-		    console.log(names);
-
 		    $("#files_blogs_content").val(names);
 		   	var files_upl = $("#files_blogs_content").val().split(",");
-
-
 		        for(var i=0; i< files_upl.length; i++)
 		        {
-
 					var extension = files_upl[i].substr( (files_upl[i].lastIndexOf('.') +1) );
 					s = '';
 					switch(extension) 
@@ -703,16 +675,12 @@
 
 		        }
 		        $("#content_fil_blog_load").html(list_files);
-
-
 		        var myfiles = document.getElementById("files_blogs");
                     var files = myfiles.files;
                     var data = new FormData();
-
                     for (i = 0; i < files.length; i++) {
                         data.append('file' + i, files[i]);
                     }
-
                     $.ajax({
                         url: 'upload_file_blogs.php', 
                         type: 'POST',
@@ -738,10 +706,8 @@
 
         function des_act_user (id)
         {
-
         	$("#usr_details_on_"+id).css('cursor', 'pointer');
         	$("#usr_details_off_"+id).css('cursor', 'pointer');
-
         	$("#usr_details_on_"+id).hover(function(){
 			    $(this).css("opacity", "0.7");
 			    }, function(){
@@ -946,7 +912,6 @@
 
         function file_word (id, content)
         {
-
         	$("#co").html('<div class="botter2"></div><div id="content_edit_'+id+'"></div><input type="file" name="fileupload" id="fileupload" style="display: none;">')
         	// Editar Blogue
 	    	tinymce.init({
@@ -964,27 +929,21 @@
                                 );
                             },
 		  	file_picker_callback: function(callback, value, meta) {
-		        
 		        // File type
 		        if (meta.filetype =="media" || meta.filetype =="image") {
-
 		        	// Trigger click on file element
 		            jQuery("#fileupload").trigger("click");
 		            $("#fileupload").unbind('change');
-
 		            // File selection
 		            jQuery("#fileupload").on("change", function() {
 		                var file = this.files[0];
 		                var reader = new FileReader();
-		                
 		                // FormData
 		                var fd = new FormData();
 		                var files = file;
 		                fd.append("file",files);
 		                fd.append('filetype',meta.filetype);
-
 		                var filename = "";
-		                
 		                // AJAX
 		                jQuery.ajax({
 		                    url: "upload.php",
@@ -997,17 +956,13 @@
 		                        filename = response;
 		                    }
 		                });
-		             
 		                reader.onload = function(e) {
 		                    callback("images/uploads/"+filename);
 		                };
 		                reader.readAsDataURL(file);
 		            });
 		        }
-		        
 		    }
-	        
-
 	    	});
         }
 
@@ -1025,16 +980,13 @@
     	{
     		var conf_blog = $("#cont_fil_edit_"+i+" > #fil_blog_edit > a > span").html();
     		removeA(names, conf_blog);
-
     		var path = "upload/"+conf_blog;
     		len--;
-
     		$.ajax({
 		      url: 'removefile_blogs.php',
 		      type: 'post',
 		      data: {path: path},
 		      success: function(response){
-		 		console.log(response);
 		        // Changing image source when remove
 		        if(response == 1){
 		          alert('File was removed successfully');
@@ -1049,11 +1001,8 @@
 		      }
 		    });
     		$('#cont_fil_edit_'+i).empty();
-    		
     	}
 
-
-    	
     	function editar_blog (id)
     	{
     		var modal_blog = $("#modal_edit_blog");
@@ -1061,26 +1010,18 @@
         	var title_cont = $("#title_blog_"+id).html();
 			$("#title_b").val(title_cont);
         	$("#num_blogue_edit").html(id);
-
         	var len = $('.fill_blog-'+id+' > #fil_blog').length;
-
         	var list_files = '';
-
-
         	for (i=0; i<len; i++)
         	{
         		list_files += '<div class="tag"><div id="cont_fil_'+i+'">' + '<font id="fil_blog_edit">' + $($('.fill_blog-'+id+' > #fil_blog')[i]).html() +'</font><button id="btn_file_rem" onclick="removeFile('+i+');"> X</button></div></div>';
         		$("#content_fil_blog").html('<br>' + list_files );
         	}
-
         	for (i=0; i<len; i++)
         	{
         		names_init.push($("#cont_fil_"+i+" > #fil_blog_edit > a > span").html());
         	}
-
-
         	file_word (id, cont);
-
         	modal_blog.modal('show');
     	}
 
@@ -1088,12 +1029,10 @@
     	{
     			var modal_blog = $("#modal_edit_blog");
         		var content = tinyMCE.get("content_edit_"+id).getContent();
-
         		var s_files_upl = '';
 	    		for (j=0; j < names_init.length; j++)
 	    		{
 	    			s_files_upl+=names_init[j]+";";
-	    			
 	    		}
 	    		var id_user = <?php echo $_COOKIE['id']; ?>;
 	    		for (i=0; i<names.length; i++)
@@ -1101,24 +1040,17 @@
 	    			s_files_upl += names[i]+";";
 	    		}
 	    		var files_a = s_files_upl.slice(0, -1);
-	    		console.log(files_a);
-
 	    		var title = $("#title_b").val();
-
 	    		datav = "action=3&title="+title+"&conteudo="+escape(content)+"&files="+escape(files_a)+"&id="+id;
-
-
 	    		$.ajax({ url:'blogs/action_blogs.php',
 			    data:datav,
 			    type:'POST',
 			    cache:false,
 			    success: function(data){
-
 			     if (data == 1) {
 			     	$('.debug-url').html('Number Blog <strong class="cpt">'+id+'</strong> was updated successfully.');
 			          $('#Modalok').modal('show');
 			          $('html, body').animate({ scrollTop: 0 }, 500);
-
 			          var obj = document.createElement("audio");
 						  obj.src = "/moodle/Sound/success.mp3";
 						  obj.volume = 0.1;
@@ -1126,27 +1058,22 @@
 						  obj.preLoad = true;
 						  obj.controls = true;
 						  obj.play();
-
-
 			          setTimeout(function(){
 			          $('#Modalok').modal('hide');},2500);
 			          setTimeout(function(){  location.reload();}, 2500);
-			          
+
 			     }
 			     else if (data == 0){
 			       $('.debug-url').html('Blog #<strong>'+id+'</strong> was not updated!');
 			          $("#Modalko").modal('show');
 			          setTimeout(function(){  $('#Modalko').modal('hide');}, 2500);
-
 			     }
 			},
 			    error:function(){
 			        $('.debug-url').html('Blog number #<strong> ' +id+ ' </strong> was not updated. Please verify wifi connection and try again.');
 			        $("#Modalko").modal('show');
-
 			}
 			  });
-
 	    		modal_blog.modal('hide');
 
 
@@ -1242,34 +1169,20 @@ function getBlogs() {
     cache:false,
     success: function(data){
       $('.back').fadeOut();
-
       arr = JSON.parse(data);
-
           if (arr.length == null || arr.length < 1 )
           {
-            
-            console.log('nada');
           }
           else 
           {
-            console.log(arr);
             for(i=0;i<arr.length;i++)
-            {								
-				
+            {
 				s +='<option value="'+arr[i].title+'">'+arr[i].title+'</option>';
-
 			}
-						
 			$("#blogs").html(s);
-
-
-            
-            
-            
           }
         },
         error:function(data){
-           console.log('erro');
        		}
         });
     
@@ -1287,36 +1200,21 @@ function getBlogsByID(name_blog)
     cache:false,
     success: function(data){
       $('.back').fadeOut();
-
       arr = JSON.parse(data);
-
           if (arr.length == null || arr.length < 1 )
           {
-            
-            console.log('nada');
           }
           else 
           {
             for(i=0;i<arr.length;i++)
-            {								
-				
+            {
 				$("#blogs_id").val(arr[i].id);
-
 			}
-						
-			
-
-
-            
-            
-            
           }
         },
         error:function(data){
-           console.log('erro');
        		}
         });
-    
     }, 50);
 }
 
@@ -1328,7 +1226,6 @@ function getBlogsByID(name_blog)
 function getBlogs_edit(title_blog) {
 	var s = '';
 	s ='<option value="'+title_blog+'">'+title_blog+'</option>';
-
 	$("#blogs").html(s);
   setTimeout(function(){ 
   dataValue='action=6';
@@ -1338,34 +1235,20 @@ function getBlogs_edit(title_blog) {
     cache:false,
     success: function(data){
       $('.back').fadeOut();
-
       arr = JSON.parse(data);
-
           if (arr.length == null || arr.length < 1 )
           {
-            
-            console.log('nada');
           }
           else 
           {
-            console.log(arr);
             for(i=0;i<arr.length;i++)
-            {								
-				
+            {
 				s +='<option value="'+arr[i].title+'">'+arr[i].title+'</option>';
-
 			}
-						
 			$("#blogs_edit").html(s);
-
-
-            
-            
-            
           }
         },
         error:function(data){
-           console.log('erro');
        		}
         });
     
@@ -1383,33 +1266,19 @@ function getBlogsByID_edit(name_blog)
     cache:false,
     success: function(data){
       $('.back').fadeOut();
-
       arr = JSON.parse(data);
-
           if (arr.length == null || arr.length < 1 )
           {
-            
-            console.log('nada');
           }
           else 
           {
             for(i=0;i<arr.length;i++)
-            {								
-				
+            {
 				$("#blogs_id_edit").val(arr[i].id);
-
 			}
-						
-			
-
-
-            
-            
-            
           }
         },
         error:function(data){
-           console.log('erro');
        		}
         });
     
@@ -1450,7 +1319,6 @@ function saveComment()
 		        cache: false,
 		        success: function(data) {
 		          $('.back').fadeOut();
-		          console.log(data);
 		          arr = [];
 		          arr = JSON.parse(data);
 		          if (arr.error){

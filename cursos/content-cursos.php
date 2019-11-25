@@ -255,7 +255,6 @@ function confirmCourses(id)
         data: dataValue,
         cache:false,
         success: function(data){
-        	console.log(data);
           if(data == 2){
             showCourses();
             $('#Modalok .debug-url').html('Course <strong>'+id+'</strong> was deleted succesfully.');
@@ -305,7 +304,6 @@ function saveCourse()
 		        cache: false,
 		        success: function(data) {
 		          $('.back').fadeOut();
-		          console.log(data);
 		          arr = [];
 		          arr = JSON.parse(data);
 		          if (arr.error){
@@ -369,11 +367,9 @@ function getCourses()
           if (arr.length == null || arr.length < 1 )
           {
             
-            console.log('nada');
           }
           else 
           {
-          	console.log(arr);
             for(i=0;i<arr.length;i++)
             {								
 				
@@ -390,7 +386,6 @@ function getCourses()
           }
         },
         error:function(data){
-           console.log('erro');
        		}
         });
     
@@ -427,7 +422,6 @@ function saveCoursesFilters(id)
         dataValue+="col_"+i+"_"+id+"="+escape($("#col-"+i+"-"+id).val())+"&";
       }
       dataValue+="id="+id+"&action=5";
-      console.log(dataValue);
 
       $.ajax({
 		        type: "POST",
@@ -435,7 +429,6 @@ function saveCoursesFilters(id)
 		        data: dataValue,
 		        cache: false,
 		        success:function(data){
-				      console.log(data);
 				      if (data == 2){
 				        $('.debug-url').html('Error this course # <b>'+id+'</b> exists in database!');
 				        $("#Modalko").modal('show');
@@ -492,7 +485,6 @@ function saveSubNomeCourse()
 		        cache: false,
 		        success: function(data) {
 		          $('.back').fadeOut();
-		          console.log(data);
 		          arr = [];
 		          arr = JSON.parse(data);
 		          if (arr.error){

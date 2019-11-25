@@ -71,7 +71,7 @@ switch ($_POST['action'])
 
   case '2':
       $obter_comp=" SELECT DISTINCT cursos FROM cursos WHERE 1";
-      $var = "";
+      $var = array();
       $result = mysqli_query($conn, $obter_comp);
       while($obj = mysqli_fetch_object($result)) 
       {
@@ -87,7 +87,7 @@ switch ($_POST['action'])
     case '3':
       $cursos = $_POST['cursos'];
       $obter_comp=' SELECT * FROM cursos WHERE cursos = "'.$cursos.'"';
-      $var = "";
+      $var = array();
       $result = mysqli_query($conn, $obter_comp);
       while($obj = mysqli_fetch_object($result)) 
       {
@@ -110,7 +110,7 @@ switch ($_POST['action'])
 
 
       $obter_comp=' SELECT DISTINCT categoria FROM cursos_videos WHERE cursos_id = "'.$id.'"';
-      $var = "";
+      $var = array();
       $result = mysqli_query($conn, $obter_comp);
       while($obj = mysqli_fetch_object($result)) 
       {
@@ -134,7 +134,7 @@ switch ($_POST['action'])
 
 
       $obter_comp=' SELECT * FROM cursos_videos WHERE cursos_id = "'.$id.'" AND categoria="'.$categoria.'"';
-      $var = "";
+      $var = array();
       $result = mysqli_query($conn, $obter_comp);
       while($obj = mysqli_fetch_object($result)) 
       {
@@ -154,7 +154,7 @@ switch ($_POST['action'])
     $id = $_POST['id'];
 
     $obter_comp=' SELECT * FROM cursos_videos WHERE id = "'.$id.'"';
-      $var = "";
+      $var = array();
       $result = mysqli_query($conn, $obter_comp);
       while($obj = mysqli_fetch_object($result)) 
       {
@@ -169,7 +169,7 @@ switch ($_POST['action'])
     case '7':
 
     $obter_comp='SELECT cursos_videos.id, cursos.cursos, cursos.sub_cursos, cursos_videos.categoria, cursos_videos.funcoes, cursos_videos.contexto, cursos_videos.ficheiro FROM cursos_videos INNER JOIN cursos ON cursos_videos.cursos_id = cursos.id ORDER BY cursos_videos.id';
-      $var = "";
+      $var = array();
       $result = mysqli_query($conn, $obter_comp);
       while($obj = mysqli_fetch_object($result)) 
       {

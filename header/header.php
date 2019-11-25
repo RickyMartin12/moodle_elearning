@@ -380,32 +380,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     </div>
                     <div class="modal-body">
                          <div class="row">
-
                             <div class="col-md-12 col-xs-12">
-
                                 <h5 class="col-xs-12 mylabel w3-padding-8 w3-card-2 align_div" >
                                      <span class="fas fa-question-circle"></span></span>&nbsp;&nbsp;Satisfaction Questionnare 
                                 </h5>
-
                             </div>
-
                         </div>
-
                         <div class="row">
                             <div class="col-md-12 col-xs-12">  
                                     <div class="form-group">
                                           <label for="nome_perg_1"><i class="fas fa-question-circle"></i>&nbsp;&nbsp; 1 - The elearning platform accept all topics desired?</label>
-
                                            <div class="radio">
                                               <label><input type="radio" name="sel_per_1" id="sel_per_1_1" value="Yes">Yes</label>
                                             </div>
                                             <div class="radio">
                                               <label><input type="radio" name="sel_per_1" id="sel_per_1_2" value="No">No</label>
                                             </div>
-                                            
                                           <input type="text" class="form-control" id="obs_perg_1" placeholder="Adicione um comentario">
-
-
                                     </div>
                             </div>
 
@@ -444,13 +435,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             </div>
 
                         </div>
-
-            
-
-
-
-
-
                     </div>
                     <div class="modal-footer">
                         <p style='text-align:center; margin:0;'><img src="/moodle/images/cs.png" class="logo-nav" style="width:68px;"></p>

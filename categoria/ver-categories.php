@@ -605,7 +605,6 @@ function showCategoryCourses(cursos, sub_cursos)
 	          if (arr.length == null || arr.length < 1 )
 	          {
 	            
-	            console.log('nothing');
 
 	          
 	          }
@@ -639,7 +638,6 @@ function showCategoryCourses(cursos, sub_cursos)
 	          }
           },
         error:function(data){
-            console.log('error');
           }
         });
 
@@ -705,7 +703,6 @@ function showCategoryFunctionsCourses (cursos, sub_cursos, categoria)
 	          if (arr.length == null || arr.length < 1 )
 	          {
 	            
-	            console.log('nothing');
 
 	          
 	          }
@@ -762,7 +759,6 @@ function showCategoryFunctionsCourses (cursos, sub_cursos, categoria)
 	          }
           },
         error:function(data){
-            console.log('error');
           }
         });
 
@@ -806,7 +802,6 @@ function function_content(id)
      			 if (arr.length == null || arr.length < 1 )
 		          {
 		            
-		            console.log('nothing');
 
 		          
 		          }
@@ -920,7 +915,6 @@ function function_content(id)
 
      		},
 	        error:function(data){
-	            console.log('error');
 	          }
 
   });

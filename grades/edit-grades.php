@@ -299,7 +299,6 @@ function confirmDeleteGrade(id)
         data: dataValue,
         cache:false,
         success: function(data){
-        	console.log(data);
           if(data == 2){
             showGrades();
             $('#Modalok .debug-url').html('Grade Course <strong>'+id+'</strong> was deleted sucessfully.');
@@ -353,7 +352,6 @@ function getCourses(cursos)
           if (arr.length == null || arr.length < 1 )
           {
             
-            console.log('nada');
           }
           else 
           {
@@ -375,7 +373,6 @@ function getCourses(cursos)
           }
         },
         error:function(data){
-           console.log('erro');
        		}
         });
     
@@ -388,13 +385,11 @@ function getSubCourse(nome_curso, sub_cursos)
 {
 	var s1 = '';
 
-	console.log(nome_curso + " " +sub_cursos);
 	$("#sub_nome_cursos_edit").html(s1);
 
 
   setTimeout(function(){ 
   dataValue='action=7&nome_curso='+escape(nome_curso);
-  console.log(dataValue);
     $.ajax({ url:'/moodle/cursos/action/action_cursos.php',
     data:dataValue,
     type:'POST', 
@@ -407,11 +402,9 @@ function getSubCourse(nome_curso, sub_cursos)
           if (arr.length == null || arr.length < 1 )
           {
             
-            console.log('nada');
           }
           else 
           {
-          	console.log(arr);
             for(i=0;i<arr.length;i++)
             {								
 				
@@ -429,7 +422,6 @@ function getSubCourse(nome_curso, sub_cursos)
           }
         },
         error:function(data){
-           console.log('erro');
        		}
         });
     
@@ -439,8 +431,7 @@ function getSubCourse(nome_curso, sub_cursos)
 
 function getCoursesbyID(nome_curso, sub_nome_curso)
 {
-	console.log(nome_curso + " " +sub_nome_curso);
-  setTimeout(function(){ 
+  setTimeout(function(){
   dataValue='action=8&nome_curso='+escape(nome_curso)+'&sub_nome_curso='+escape(sub_nome_curso);
     $.ajax({ url:'/moodle/cursos/action/action_cursos.php',
     data:dataValue,
@@ -454,7 +445,6 @@ function getCoursesbyID(nome_curso, sub_nome_curso)
           if (arr.length == null || arr.length < 1 )
           {
             
-            console.log('nada');
           }
           else 
           {
@@ -471,7 +461,6 @@ function getCoursesbyID(nome_curso, sub_nome_curso)
           }
         },
         error:function(data){
-           console.log('erro');
        		}
         });
     
@@ -577,7 +566,6 @@ function saveGrade(id)
 			    type:'POST',
 			    cache:false,
 			    success: function(data){
-			    	console.log(data);
 			    arr = [];
 		        arr = JSON.parse(data);
 			    if (arr.error){

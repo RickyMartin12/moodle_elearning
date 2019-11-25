@@ -306,7 +306,6 @@ function getCourses()
           if (arr.length == null || arr.length < 1 )
           {
             
-            console.log('nada');
           }
           else 
           {
@@ -326,7 +325,6 @@ function getCourses()
           }
         },
         error:function(data){
-           console.log('erro');
        		}
         });
     
@@ -360,11 +358,9 @@ function getSubCourse(nome_curso)
           if (arr.length == null || arr.length < 1 )
           {
             
-            console.log('nada');
           }
           else 
           {
-          	console.log(arr);
             for(i=0;i<arr.length;i++)
             {								
 				
@@ -381,7 +377,6 @@ function getSubCourse(nome_curso)
           }
         },
         error:function(data){
-           console.log('erro');
        		}
         });
     
@@ -450,7 +445,6 @@ function getCoursesbyID(nome_curso, sub_nome_curso)
           if (arr.length == null || arr.length < 1 )
           {
             
-            console.log('nada');
           }
           else 
           {
@@ -467,7 +461,6 @@ function getCoursesbyID(nome_curso, sub_nome_curso)
           }
         },
         error:function(data){
-           console.log('erro');
        		}
         });
     
@@ -570,7 +563,6 @@ var names = [];
 		      type: 'post',
 		      data: {path: path},
 		      success: function(response){
-		 		console.log(response);
 		        if(response == 1){
 		          alert('File was removed successfully');
 		        }
@@ -645,7 +637,6 @@ function saveCategory()
 		        data: datav,
 		        success: function(data) {
 		          $('.back').fadeOut();
-		          console.log(data);
 		          arr = [];
 		          arr = JSON.parse(data);
 		          if (arr.error){
@@ -1185,7 +1176,6 @@ function showCategoryCourses(cursos, sub_cursos)
 	          if (arr.length == null || arr.length < 1 )
 	          {
 	            
-	            console.log('nothing');
 	          }
 	          else 
 	          {
@@ -1285,7 +1275,6 @@ function showCategoryFunctionsCourses (cursos, sub_cursos, categoria)
 	          if (arr.length == null || arr.length < 1 )
 	          {
 	            
-	            console.log('nothing');
 
 	          
 	          }
@@ -1388,7 +1377,6 @@ function function_content(id)
      			 if (arr.length == null || arr.length < 1 )
 		          {
 		            
-		            console.log('nothing');
 
 		          
 		          }

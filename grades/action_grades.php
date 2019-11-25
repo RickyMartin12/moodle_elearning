@@ -70,7 +70,7 @@ switch ($_POST['action']){
 
     case '2':
       $obter_comp=" SELECT DISTINCT cursos FROM cursos WHERE 1";
-      $var = "";
+      $var = array();
       $result = mysqli_query($conn, $obter_comp);
       while($obj = mysqli_fetch_object($result)) 
       {
@@ -86,7 +86,7 @@ switch ($_POST['action']){
     case '3':
       $cursos = $_POST['cursos'];
       $obter_comp=' SELECT * FROM cursos WHERE cursos = "'.$cursos.'"';
-      $var = "";
+      $var = array();
       $result = mysqli_query($conn, $obter_comp);
       while($obj = mysqli_fetch_object($result)) 
       {
@@ -110,7 +110,7 @@ switch ($_POST['action']){
 
 
       $obter_comp='SELECT grades_cursos.cursos_id, cursos.sub_cursos, AVG(grades_cursos.calcular_media) as "media_sub_cursos" FROM grades_cursos INNER JOIN cursos ON grades_cursos.cursos_id = cursos.id WHERE grades_cursos.cursos_id = '.$id.' GROUP BY grades_cursos.cursos_id';
-      $var = "";
+      $var = array();
       $result = mysqli_query($conn, $obter_comp);
       while($obj = mysqli_fetch_object($result)) 
       {
@@ -125,7 +125,7 @@ switch ($_POST['action']){
 
    	 $obter_comp='SELECT grades_cursos.id, cursos.cursos, cursos.sub_cursos, grades_cursos.calcular_media, grades_cursos.graus, grades_cursos.percentagem, grades_cursos.feedback FROM grades_cursos INNER JOIN cursos ON grades_cursos.cursos_id = cursos.id ORDER BY grades_cursos.id';
 
-      $var = "";
+      $var = array();
       $result = mysqli_query($conn, $obter_comp);
       while($obj = mysqli_fetch_object($result)) 
       {
@@ -217,7 +217,7 @@ switch ($_POST['action']){
 
    	 $obter_comp='SELECT cursos.cursos, AVG(grades_cursos.calcular_media) as "media_sub_cursos" FROM grades_cursos INNER JOIN cursos ON grades_cursos.cursos_id = cursos.id WHERE cursos.cursos = "'.$cursos.'" GROUP BY cursos.cursos';
 
-      $var = "";
+      $var = array();
       $result = mysqli_query($conn, $obter_comp);
       while($obj = mysqli_fetch_object($result)) 
       {

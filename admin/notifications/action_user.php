@@ -33,6 +33,8 @@ switch ($_POST['action']){
     
     $passord_conf = '';
 
+        $pass = '';
+
     if (!$_POST['utilizador'])
       $err .= "- Username <span class='w3-text-red'> *</span><br>";
     else{
@@ -329,7 +331,7 @@ switch ($_POST['action']){
     case '6':
     $obter_comp=" SELECT * FROM admins WHERE 1";
 
-    $var = "";
+    $var = array();
 
     $result = mysqli_query($conn, $obter_comp);
     while($obj = mysqli_fetch_object($result)) 

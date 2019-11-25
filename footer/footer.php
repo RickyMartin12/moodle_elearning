@@ -910,63 +910,36 @@
 		$("#change_perfil").click(function(e)
 		{
 			var perfil_user_edit_pre = $("#perfil_user_edit_pre");
-
 			var username = $("#logged_username_name").html();
-
 			var departamento = $("#logged_perfil_dep_user").val();
-
 			var email = $("#logged_perfil_email_user").val();
-
 			var hab = $("#logged_perfil_hab_user").val();
-
 			var pais = $("#logged_perfil_pais_user").val();
-
 			var tipo_utilizador = $("#tipo_utilizador_perfil_usr").val();
-
 			var pri_utilizador = $("#pri_utilizador_perfil_usr").val();
-
 			$("#nome_utilizador_perfil_pre").val(username);
-
 			$("#edit_perfil_username_pre").html(username);
-
 			$("#nome_departament_perfil_pre").val(departamento);
-
 			$("#nome_country_perfil_pre").val(pais);
-
 			$("#nome_skills_perfil_pre").val(hab);
-
 			$("#nome_email_perfil_pre").val(email);
-
 			$("#tipo_utilizador_perfil_pre").val(tipo_utilizador);
-
 			$("#pri_utilizador_perfil_pre").val(pri_utilizador);
-
 			$("#logo_user_perf_pre").html('<img src="images/users/'+s_pre+'" class="img-responsive"><br>');
-
 			perfil_user_edit_pre.modal('show');
 		});
 
 		$("#edit_utilizador_pre").click(function(e)
 		{
-
 			var perfil_user_edit_pre = $("#perfil_user_edit_pre");
-
 			var user_name_prof = $("#nome_utilizador_perfil_pre").val();
-
 			var dep = $("#nome_departament_perfil_pre").val();
-
 			var email = $("#nome_email_perfil_pre").val();
-
 			var pais = $("#nome_country_perfil_pre").val();
-
 			var hab = $("#nome_skills_perfil_pre").val();
-
 			var tipo_utilizador = $("#tipo_utilizador_perfil_pre").val();
-
-			var pri_utilizador = $("#pri_utilizador_perfil_pre").val(); 
-
+			var pri_utilizador = $("#pri_utilizador_perfil_pre").val();
 			datav="action=1&utilizador="+user_name_prof+"&pais="+pais+"&email="+email+"&tipo_utilizador="+tipo_utilizador+"&privilegios="+pri_utilizador+"&departament="+dep+"&skills="+hab+"&img_logo="+s_pre+"&id="+<?php echo $_COOKIE['id'] ?>;
-
 			$('.back').show();
 		    e.preventDefault();
 		    $.ajax({
@@ -989,38 +962,13 @@
 		          	  $('.debug-url').html('User Profile #<strong>'+<?php echo $_COOKIE['id']; ?>+'</strong> was not updated sucessfully');
 	                  $("#Modalko").modal('show');
 	                  setTimeout(function(){  $('#Modalko').modal('hide');}, 2500);
-			            
-			          }
+			       }
 		        },
 		        error: function() {
 		        	 $('.debug-url').html("The User Profile was not updated successfully. Verify the wifi connection and try again");
 		            $("#Modalko").modal('show');
 		        }
 		    });
-
-			
-
-			/*alert("Nome do Utilizador: " + $("#nome_utilizador_perfil_pre").val() + "\n" +
-				"Nome do Departamento: " + $("#nome_departament_perfil_pre").val() + "\n" +
-				"Pais: " + $("#nome_country_perfil_pre").val() + "\n" + "\n" +
-				"Habilidade (s): " +  $("#nome_skills_perfil_pre").val() + "\n" +
-				"Email: " + $("#nome_email_perfil_pre").val() + "\n" +
-				"Logotipo: " + s_pre);
-
-			$("#logged_username_name").html(user_name_prof);
-
-			var path = '/moodle/images/users/'+s_pre;
-
-			$("#logged_username_img").attr('src', path);
-
-			$("#logged_perfil_dep_user").val(dep);
-
-			$("#logged_perfil_email_user").val(email);
-
-			$("#logged_perfil_hab_user").val(hab);
-
-			$("#logged_perfil_pais_user").val(pais);*/
-
 			perfil_user_edit_pre.modal('hide');
 
 			
@@ -1060,27 +1008,18 @@
 		$("#change_password").click(function(e)
 		{
 			var password_change_modal = $("#password_change_modal");
-
 			$("#nova_passord_pre").val('');
 			$("#conf_nova_passord_pre").val('');
-
 			password_change_modal.modal('show');
 		});
-
 
 		$("#salvar_password").click(function(e)
 		{
 			e.preventDefault();
-
 			var password_change_modal = $("#password_change_modal");
-
 			var nova_passord_pre = $("#nova_passord_pre").val();
-
 			var conf_nova_passord_pre = $("#conf_nova_passord_pre").val();
-
-
 			datav="action=2&password="+nova_passord_pre+"&conf_password="+conf_nova_passord_pre+"&id="+<?php echo $_COOKIE['id'] ?>;
-
 			$('.back').show();
 		    e.preventDefault();
 		    $.ajax({
@@ -1090,20 +1029,17 @@
 		        cache: false,
 		        success: function(data) {
 		          $('.back').fadeOut();
-		          console.log(data);
 		          arr = [];
 		          arr = JSON.parse(data);
 		          if (arr.error){
 		            $(".debug-url").html("Please, Verify:<br><br>"+arr.error+"<br> Correct the error and try again");
                     $('#Modalko').modal('show');
-
 		          }
 		          else if (arr.success == 0)
                     {
                             $(".back").hide();
                             $(".load").show();
                         $('.debug-url').html('The User Password <?php echo $_COOKIE['username'] ?> was not actualized successfully');
-
                         $('#Modalko').modal('show');
                     }
                     else if (arr.success == 1)
@@ -1111,14 +1047,8 @@
                             $(".back").hide();
                             $(".load").show();
                         $('.debug-url').html('The User Password <?php echo $_COOKIE['username'] ?> was actualized successfully');
-                        
                         $('#Modalok').modal('show');
-
-                        
-
                         setTimeout(function(){  window.location = '/moodle/logout.php'; }, 2500);
-
-                        
                     }
 		        },
 		        error: function() {
@@ -1126,65 +1056,45 @@
 		            $("#Modalko").modal('show');
 		        }
 		    });
-
-
 		    password_change_modal.modal('hide');
-
 		});
 
 		$("#quest_click").on('click', function(e)
 		{
 			var quest_modal = $("#quest_modal");
-
 			quest_modal.modal('show');
 		});
 
 
 		function saveQuest()
 		{
-
 			var quest_modal = $("#quest_modal");
-
-			
 			var per_3 = $("#sel_per_3").val().replace(/\n/g, "<br />");
 			var per_1 = $('input[name=sel_per_1]:checked').val();
 			var per_2 = $('input[name=sel_per_2]:checked').val();
-
 			var obs_per_1 = $("#obs_perg_1").val();
 			var obs_per_2 = $("#obs_perg_2").val();
-
-
 		        if ($('#sel_per_1_1').is(":checked") == false && $('#sel_per_1_2').is(":checked") == false) {
 		            per_1 = '';
 		        }
-
-
 		        if ($('#sel_per_2_1').is(":checked") == false && $('#sel_per_2_2').is(":checked") == false) {
 		            per_2 = '';
 		        }
-
-
-
-
 			dataValue = "per_1="+per_1+"&obs_per_1="+obs_per_1+"&per_2="+per_2+"&obs_per_2="+obs_per_2+"&per_3="+per_3;
-
-			console.log(dataValue);
-
-
 			$.ajax({ url:'/moodle/footer/action_quest.php',
 			data:dataValue,
 			    type:'POST', 
 			    cache: false,
 			    success:function(data){
-			    	console.log(data);
 			       if(data == 0)
 			      {
-			          $(".back").hide();
-			          $(".load").show();
-			        $('.debug-url').html("The Questionnaire was submitted successfully");
-			          $("#Modalok").modal('show');
-			          setTimeout(function(){
-			          $('#Modalok').modal('hide');},2500);
+			            $(".back").hide();
+			            $(".load").show();
+			            $('.debug-url').html("The Questionnaire was submitted successfully");
+			            $("#Modalok").modal('show');
+			            setTimeout(function(){
+			                $('#Modalok').modal('hide');},2500
+                        );
 			     }
 			     else
 			     {
@@ -1193,7 +1103,6 @@
 			      $('.debug-url').html("Please verify the following fields:<br><br>"+data+"<br> and try again.");
 			        $('#Modalko').modal('show');
 			     }
-			     
 			   },
 			 error:function(){
 			     $(".back").hide();
@@ -1201,27 +1110,9 @@
 			     $('.debug-url').html("The Questionnaire was not submitted successfully. Verify the wifi connection and try again");
 			        $('#Modalko').modal('show');
 			    }
-
-
-  });
-
+             });
 			quest_modal.modal('hide');
-
-
-
-
-
-
 		}
-
-
-
-
-
-
-		  
-
-
 	</script>
 
 

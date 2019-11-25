@@ -298,7 +298,6 @@ function confirmDeleteCategory(id)
         data: dataValue,
         cache:false,
         success: function(data){
-        	console.log(data);
           if(data == 2){
             showCategories();
             $('#Modalok .debug-url').html('The Category <strong>'+id+'</strong> was deleted sucessfully.');
@@ -349,7 +348,6 @@ function getCourses(cursos)
           if (arr.length == null || arr.length < 1 )
           {
             
-            console.log('nothing');
           }
           else 
           {
@@ -371,7 +369,6 @@ function getCourses(cursos)
           }
         },
         error:function(data){
-           console.log('error');
        		}
         });
     
@@ -384,13 +381,11 @@ function getSubCourse(nome_curso, sub_cursos)
 {
 	var s1 = '';
 
-	console.log(nome_curso + " " +sub_cursos);
 	$("#sub_nome_cursos_edit").html(s1);
 
 
   setTimeout(function(){ 
   dataValue='action=7&nome_curso='+escape(nome_curso);
-  console.log(dataValue);
     $.ajax({ url:'/moodle/cursos/action/action_cursos.php',
     data:dataValue,
     type:'POST', 
@@ -403,11 +398,9 @@ function getSubCourse(nome_curso, sub_cursos)
           if (arr.length == null || arr.length < 1 )
           {
             
-            console.log('nothing');
           }
           else 
           {
-          	console.log(arr);
             for(i=0;i<arr.length;i++)
             {								
 				
@@ -425,7 +418,6 @@ function getSubCourse(nome_curso, sub_cursos)
           }
         },
         error:function(data){
-           console.log('error');
        		}
         });
     
@@ -435,8 +427,7 @@ function getSubCourse(nome_curso, sub_cursos)
 
 function getCoursesbyID(nome_curso, sub_nome_curso)
 {
-	console.log(nome_curso + " " +sub_nome_curso);
-  setTimeout(function(){ 
+  setTimeout(function(){
   dataValue='action=8&nome_curso='+escape(nome_curso)+'&sub_nome_curso='+escape(sub_nome_curso);
     $.ajax({ url:'/moodle/cursos/action/action_cursos.php',
     data:dataValue,
@@ -450,7 +441,6 @@ function getCoursesbyID(nome_curso, sub_nome_curso)
           if (arr.length == null || arr.length < 1 )
           {
             
-            console.log('nada');
           }
           else 
           {
@@ -467,7 +457,6 @@ function getCoursesbyID(nome_curso, sub_nome_curso)
           }
         },
         error:function(data){
-           console.log('erro');
        		}
         });
     
@@ -482,7 +471,6 @@ var names = [];
 function lister_files (id, files)
         {
         	var l_files = files;
-        	console.log(l_files);
         	if (l_files != "")
         	{	
         		var elem = l_files.split(';');
@@ -560,7 +548,6 @@ function lister_files (id, files)
 		        names.push($(this).get(0).files[i].name);
 		    }
 		    var list_files = '';
-		    console.log(names);
 		    $("#files_blogs_content").val(names);
 		   	var files_upl = $("#files_blogs_content").val().split(",");
 
@@ -628,7 +615,6 @@ function lister_files (id, files)
 		function removeFileEdit(i)
     	{
     		var conf_blog = $("#cont_fil_edit_"+i+" > #fil_blog_edit > span").html();
-    		console.log(conf_blog);
     		removeA(names, conf_blog);
 
     		var path = "cat/"+conf_blog;
@@ -637,7 +623,6 @@ function lister_files (id, files)
 		      type: 'post',
 		      data: {path: path},
 		      success: function(response){
-		 		console.log(response);
 		        if(response == 1){
 		          alert('File was removed successfully');
 		        }
@@ -756,7 +741,6 @@ function saveCategory(id)
 			    data:datav,
 			    type:'POST',
 			    success: function(data){
-			    	console.log(data);
 			    arr = [];
 		        arr = JSON.parse(data);
 			    if (arr.error){

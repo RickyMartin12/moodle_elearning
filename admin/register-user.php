@@ -773,7 +773,6 @@ $("#myButton").on("click", function(e) {
         cache: false,
         success: function(data) {
           $('.back').fadeOut();
-          console.log(data);
           obj = JSON.parse(data);
           if (obj.error){
             $('#showerrors .header').addClass('w3-amber').removeClass('w3-green w3-red')

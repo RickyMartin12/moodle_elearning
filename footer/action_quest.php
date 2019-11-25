@@ -174,7 +174,7 @@ if ($error_message == '')
 
 
 
-	echo 0;
+
 
 
 	$mpdf=new mPDF();
@@ -212,7 +212,7 @@ if ($error_message == '')
         $body_c .= "--".$separator.$eol;
         $body_c .= "Content-Type: text/html; charset=\"iso-8859-1\"".$eol;
         $body_c .= "Content-Transfer-Encoding: 8bit".$eol.$eol;
-        $body_c .= $info_server.$eol;
+        $body_c .= $info_c.$eol;
 
         $body_c .= "--".$separator.$eol;
         $body_c .= "Content-Type: application/octet-stream; name=\"".$filename."\"".$eol; 
@@ -224,9 +224,11 @@ if ($error_message == '')
         if (mail($to, $subject, $body_c, $headers)) {
 
 	        $msgsuccess = 'Mail Send Successfully';
+            echo 0;
 	    } else {
 
 	        $msgerror = 'Main not send';
+            echo 11;
 	    }
 
 }

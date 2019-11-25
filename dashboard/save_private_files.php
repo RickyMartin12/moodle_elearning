@@ -20,7 +20,7 @@ switch ($_POST['action']){
 
     case '1':
 
-    	$v = "";
+    	$v = array();
 
     	$files_private = $_POST['files_private'];
 
@@ -113,7 +113,7 @@ switch ($_POST['action']){
     case '2':
     	$id = $_POST['id'];
     	$obter_comp=" SELECT * FROM private_files_users WHERE user_id=$id";
-    	$var = "";
+    	$var = array();
 
 		$result = mysqli_query($conn, $obter_comp);
 		while($obj = mysqli_fetch_object($result)) 

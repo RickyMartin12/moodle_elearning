@@ -189,7 +189,6 @@ function createFormData(image)
 		 processData: false,
 		 success: function(data){
 		 	image_upl = data;
-		 	console.log(image_upl);
 		 }});
 		}
 
@@ -222,15 +221,12 @@ function editUsersFilters(id)
         dataValue+="col_"+i+"_"+id+"="+$("#col-"+i+"-"+id).val()+"&";
       }
       dataValue+="logotipo="+image_upl+"&id="+id+"&action=7";
-      console.log(dataValue);
-
       $.ajax({
 		        type: "POST",
 		        url: "notifications/action_user.php",
 		        data: dataValue,
 		        cache: false,
 		        success:function(data){
-				      console.log(data);
 				      if (data == 2){
 				        $('.debug-url').html('Error, There are exist the same username <b>'+nome+'</b> in database!');
 				        $("#Modalko").modal('show');
@@ -274,7 +270,6 @@ function editUsersFilters(id)
         data: dataValue,
         cache:false,
         success: function(data){
-        	console.log(data);
           if(data == 2){
             showUsers();
             $('#Modalok .debug-url').html('O Utilizador <strong>'+nome+'</strong> foi apagado com sucesso.');

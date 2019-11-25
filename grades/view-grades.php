@@ -250,7 +250,6 @@ function getCourses()
           if (arr.length == null || arr.length < 1 )
           {
             
-            console.log('nada');
           }
           else 
           {
@@ -270,7 +269,6 @@ function getCourses()
           }
         },
         error:function(data){
-           console.log('erro');
        		}
         });
     
@@ -304,11 +302,9 @@ function getSubCourse(nome_curso)
           if (arr.length == null || arr.length < 1 )
           {
             
-            console.log('nada');
           }
           else 
           {
-          	console.log(arr);
             for(i=0;i<arr.length;i++)
             {								
 				
@@ -325,7 +321,6 @@ function getSubCourse(nome_curso)
           }
         },
         error:function(data){
-           console.log('erro');
        		}
         });
     
@@ -394,7 +389,6 @@ function getCoursesbyID(nome_curso, sub_nome_curso)
           if (arr.length == null || arr.length < 1 )
           {
             
-            console.log('nada');
           }
           else 
           {
@@ -411,7 +405,6 @@ function getCoursesbyID(nome_curso, sub_nome_curso)
           }
         },
         error:function(data){
-           console.log('erro');
        		}
         });
     
@@ -498,7 +491,6 @@ function saveGrades()
 		        cache: false,
 		        success: function(data) {
 		          $('.back').fadeOut();
-		          console.log(data);
 		          arr = [];
 		          arr = JSON.parse(data);
 		          if (arr.error){

@@ -61,7 +61,6 @@ switch ($_POST['action']){
 
     case '2':
       $id_user = $_COOKIE['id'];
-      $var = "";
     	$obter_clientes="SELECT blog.id, blog.title, blog.user_id, admins.nome, admins.logotipo, blog.conteudo, blog.files, blog.hora_pub, blog.data_pub FROM blog INNER JOIN admins ON blog.user_id = admins.id ORDER BY blog.id";
         $result = mysqli_query($conn, $obter_clientes);
         while($obj = mysqli_fetch_object($result)) 
@@ -115,7 +114,7 @@ switch ($_POST['action']){
     case '5':
 
       $blog_id = $_POST['blog_id'];
-      $var = "";
+      $var= array();
       $obter_clientes="SELECT comment.id, comment.com, comment.user_id, admins.nome, admins.logotipo, blog.title, comment.hora_pub, comment.data_pub FROM comment INNER JOIN admins ON comment.user_id = admins.id INNER JOIN blog ON comment.blog_id = blog.id WHERE comment.blog_id = $blog_id AND admins.tipo = 'Administrator'  ORDER BY comment.id";
         $result = mysqli_query($conn, $obter_clientes);
         while($obj = mysqli_fetch_object($result)) 
@@ -129,7 +128,6 @@ switch ($_POST['action']){
 
 
     case '6':
-    $var = "";
       $obter_clientes="SELECT title from blog";
         $result = mysqli_query($conn, $obter_clientes);
         while($obj = mysqli_fetch_object($result)) 
@@ -140,7 +138,6 @@ switch ($_POST['action']){
     break;
 
     case '7':
-    $var = "";
     $title = $_POST['title'];
       $obter_clientes="SELECT id from blog WHERE title='$title' LIMIT 1";
         $result = mysqli_query($conn, $obter_clientes);
