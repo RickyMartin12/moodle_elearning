@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.0.1
+-- version 4.9.1
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: 11-Jul-2019 às 10:13
--- Versão do servidor: 10.1.32-MariaDB
--- PHP Version: 5.6.36
+-- Host: 127.0.0.1
+-- Tempo de geração: 25-Nov-2019 às 21:27
+-- Versão do servidor: 10.4.8-MariaDB
+-- versão do PHP: 7.3.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `moodle`
+-- Banco de dados: `moodle`
 --
 
 -- --------------------------------------------------------
@@ -51,8 +51,8 @@ CREATE TABLE `admins` (
 
 INSERT INTO `admins` (`id`, `nome`, `pass`, `privilegios`, `tipo`, `email`, `country`, `departament`, `skills`, `logotipo`, `data_criacao`, `hora_criacao`, `data_login`, `hora_login`) VALUES
 (4, 'Maria Simões', '21232f297a57a5a743894a0e4a801fc3', '1', 'Administrator', 'maria.simoes@shijigroup.com', 'Portugal', 'Logistica', 'JS', 'info_news.jpg   ', '2019-06-04', '09:41:00', '2019-07-03', '11:08:00'),
-(7, 'Ricardo Peleira', '72bd39f7e04d111d9cd9a8f808612ddf', '1', 'Administrator', 'r.peleira@hotmail.com', 'Portugal', 'Logística', 'Áreadj', 'pokemon___lapras_wallpaper_by_kniye-d3nn3j4.jpg   ', '2019-06-04', '10:24:00', '2019-07-10', '13:29:00'),
-(10, 'Luis Simão', '502ff82f7f1f8218dd41201fe4353687', '2', 'User', 'ricardopeleira16@gmail.com', 'Portugal', 'Logística', 'PHP', 'pokemon___lapras_wallpaper_by_kniye-d3nn3j4.jpg   ', '2019-06-04', '10:24:00', '2019-07-03', '15:13:00');
+(7, 'Ricardo Peleira', '72bd39f7e04d111d9cd9a8f808612ddf', '1', 'Administrator', 'r.peleira@hotmail.com', 'Portugal', 'Logística', 'Áreadj', 'tila-tequila.jpg   ', '2019-06-04', '10:24:00', '2019-11-25', '12:12:00'),
+(10, 'Luis Simão', 'ae0eea6eb6d63f98da42de867c47a0f8', '2', 'User', 'ricardopeleira16@gmail.com', 'Portugal', 'Programador', 'Android Studio', 'pokemon___lapras_wallpaper_by_kniye-d3nn3j4.jpg   ', '2019-06-04', '10:24:00', '2019-11-25', '13:15:00');
 
 -- --------------------------------------------------------
 
@@ -77,7 +77,8 @@ CREATE TABLE `blog` (
 INSERT INTO `blog` (`id`, `title`, `user_id`, `conteudo`, `files`, `hora_pub`, `data_pub`) VALUES
 (1, 'Lapras gre lol', 4, '<h2 style=\"text-align: center;\">Boas Pessoal</h2>\n<p>Tribute Negro</p>\n<p>jjj</p>', 'Profile.pdf', '16:04:00', '2019-07-05'),
 (2, 'Titlo de Maria Simoes', 4, '<p>Travel my mind</p>\n<p><img src=\"images/uploads/info_news.jpg\" alt=\"\" width=\"1200\" height=\"675\" /></p>\n<p>Ola a todos</p>\n<p>Nao gosto desta situa&ccedil;&atilde;o</p>\n<p>&nbsp;</p>', 'Profile.pdf', '09:03:00', '2019-07-09'),
-(3, 'Spa Agenda ', 10, '<p>Spa is beuatiful <strong>9999 &aacute; &amp;&amp;&amp;&amp;</strong></p>', '1ad80ae8b1cd9d183dadffa3e0fa1ec5.png', '12:42:00', '2019-07-10');
+(3, 'Spa Agenda ', 10, '<p>Spa is beuatiful <strong>9999 &aacute; &amp;&amp;&amp;&amp;</strong></p>', '1ad80ae8b1cd9d183dadffa3e0fa1ec5.png', '12:42:00', '2019-07-10'),
+(4, 'Riversade Stadium', 7, '<h1 style=\"text-align: center;\">O Dia do Peixe</h1>\n<p><img style=\"display: block; margin-left: auto; margin-right: auto;\" src=\"images/uploads/gold.jpeg\" width=\"220\" height=\"165\" /></p>\n<p><span style=\"color: #222222; font-family: sans-serif; font-size: 14px;\">The&nbsp;</span><strong style=\"color: #222222; font-family: sans-serif; font-size: 14px;\">common goldfish</strong><span style=\"color: #222222; font-family: sans-serif; font-size: 14px;\">&nbsp;is a breed of&nbsp;</span><a style=\"text-decoration-line: none; color: #0b0080; background-image: none; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; font-family: sans-serif; font-size: 14px;\" title=\"Goldfish\" href=\"https://en.wikipedia.org/wiki/Goldfish\">goldfish</a><span style=\"color: #222222; font-family: sans-serif; font-size: 14px;\">&nbsp;with no other differences from its living ancestor, the&nbsp;</span><a style=\"text-decoration-line: none; color: #0b0080; background-image: none; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; font-family: sans-serif; font-size: 14px;\" title=\"Prussian carp\" href=\"https://en.wikipedia.org/wiki/Prussian_carp\">Prussian carp</a><span style=\"color: #222222; font-family: sans-serif; font-size: 14px;\">, other than its color and shape. Goldfish are a form of domesticated wild carp and are a close relative of&nbsp;</span><a style=\"text-decoration-line: none; color: #0b0080; background-image: none; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; font-family: sans-serif; font-size: 14px;\" title=\"Koi\" href=\"https://en.wikipedia.org/wiki/Koi\">koi</a><span style=\"color: #222222; font-family: sans-serif; font-size: 14px;\">.</span><sup id=\"cite_ref-FishChannel_1-0\" class=\"reference\" style=\"line-height: 1; unicode-bidi: isolate; white-space: nowrap; font-size: 11.2px; color: #222222; font-family: sans-serif;\"><a style=\"text-decoration-line: none; color: #0b0080; background: none;\" href=\"https://en.wikipedia.org/wiki/Common_goldfish#cite_note-FishChannel-1\">[1]</a></sup><span style=\"color: #222222; font-family: sans-serif; font-size: 14px;\">&nbsp;Most varieties of&nbsp;</span><a class=\"mw-redirect\" style=\"text-decoration-line: none; color: #0b0080; background-image: none; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; font-family: sans-serif; font-size: 14px;\" title=\"Fancy goldfish\" href=\"https://en.wikipedia.org/wiki/Fancy_goldfish\">fancy goldfish</a><span style=\"color: #222222; font-family: sans-serif; font-size: 14px;\">&nbsp;were derived from this simple breed.</span><sup id=\"cite_ref-2\" class=\"reference\" style=\"line-height: 1; unicode-bidi: isolate; white-space: nowrap; font-size: 11.2px; color: #222222; font-family: sans-serif;\"><a style=\"text-decoration-line: none; color: #0b0080; background: none;\" href=\"https://en.wikipedia.org/wiki/Common_goldfish#cite_note-2\">[2]</a></sup><span style=\"color: #222222; font-family: sans-serif; font-size: 14px;\">&nbsp;Common goldfish come in a variety of colors including red, orange, red/white, white/black, yellow/white, blue, grey/brown/, olive green, yellow, white, and black, with the most common variation being orange ,(combined with its simplicity, hence the name). Sometimes, the brightness, duration, and the vividness of the color may be an indication of the fish&rsquo;s health status.</span></p>', '75 - A Thread Should Have a Unique Slug Part 1.mp4', '13:40:00', '2019-11-25');
 
 -- --------------------------------------------------------
 
@@ -89,50 +90,22 @@ CREATE TABLE `chat_message` (
   `chat_message_id` int(11) NOT NULL,
   `to_user_id` int(11) NOT NULL,
   `from_user_id` int(11) NOT NULL,
-  `chat_message` text NOT NULL,
-  `timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `chat_message` mediumtext COLLATE utf8mb4_bin NOT NULL,
+  `timestamp` timestamp NOT NULL DEFAULT current_timestamp(),
   `status` int(1) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 
 --
 -- Extraindo dados da tabela `chat_message`
 --
 
 INSERT INTO `chat_message` (`chat_message_id`, `to_user_id`, `from_user_id`, `chat_message`, `timestamp`, `status`) VALUES
-(24, 7, 4, 'ðŸ¤‘ðŸ¤‘ðŸ¤‘', '2019-07-02 15:42:57', 0),
-(25, 4, 7, 'ðŸ“²', '2019-07-02 15:45:09', 0),
-(26, 7, 4, 'ðŸ˜™', '2019-07-02 15:54:42', 0),
-(27, 4, 7, 'âš¾âš¾âš¾', '2019-07-02 15:55:00', 0),
-(28, 4, 7, 'ðŸ±', '2019-07-02 15:55:08', 0),
-(29, 4, 7, 'Lol ðŸ˜†ðŸ˜†ðŸ˜†ðŸ˜†', '2019-07-02 15:58:14', 0),
-(30, 7, 4, 'ai', '2019-07-02 15:59:30', 0),
-(31, 4, 7, 'ðŸ˜†ðŸ˜†ðŸ˜†ðŸ˜†', '2019-07-02 16:05:42', 0),
-(32, 7, 4, 'ðŸ˜œðŸ˜‹ðŸ˜‹ðŸ˜Œ', '2019-07-02 16:06:08', 0),
-(33, 0, 7, '<p><img src=\"upload/pokemon___lapras_wallpaper_by_kniye-d3nn3j4.jpg\" class=\"img-thumbnail\" width=\"200\" height=\"160\"></p><br>', '2019-07-02 16:06:26', 1),
-(34, 7, 4, 'nice boy ðŸ˜œðŸ˜œðŸ˜œ', '2019-07-02 16:07:30', 0),
-(35, 4, 7, 'ðŸ˜›', '2019-07-02 16:39:47', 0),
-(36, 7, 4, 'Ola Ricardo ðŸ˜„ðŸ˜„ðŸ˜„', '2019-07-02 16:40:13', 0),
-(37, 7, 4, 'ðŸ˜ðŸ˜ðŸ˜ðŸ˜ðŸ˜\n', '2019-07-03 08:24:05', 0),
-(38, 7, 4, 'a', '2019-07-03 10:04:49', 0),
-(39, 4, 7, 'ðŸ˜‰ðŸ˜‰ðŸ˜‰ðŸ˜‰ðŸ˜‰ðŸ˜‰ðŸ˜‰ðŸ˜‰ðŸ˜„ðŸ˜„ðŸ˜„ðŸ˜„ðŸ˜„ðŸ˜„', '2019-07-03 10:05:12', 0),
-(40, 9, 4, 'Copia o meu teste ðŸ˜ðŸ˜', '2019-07-03 10:06:26', 0),
-(41, 4, 9, 'what', '2019-07-03 10:09:43', 0),
-(42, 0, 4, 'boas pessoal', '2019-07-03 11:03:26', 1),
-(43, 0, 10, 'boas', '2019-07-03 11:03:40', 1),
-(44, 9, 4, 'Ola\nUma ova', '2019-07-03 12:03:05', 0),
-(45, 0, 4, 'aaa', '2019-07-03 14:10:40', 1),
-(46, 0, 7, 'goas', '2019-07-03 14:10:53', 1),
-(47, 10, 7, 'ola', '2019-07-03 14:13:05', 0),
-(48, 7, 4, 'ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘', '2019-07-03 14:16:17', 0),
-(49, 0, 4, '<p><img src=\"upload/IMG_20190630_122810.jpg\" class=\"img-thumbnail\" width=\"200\" height=\"160\"></p><br>', '2019-07-03 14:17:06', 1),
-(50, 7, 4, 'ðŸ˜›ðŸ˜›ðŸ˜›ðŸ˜›ðŸ˜›', '2019-07-05 08:54:29', 1),
-(51, 7, 4, 'ola\nboa tarde ðŸ˜„ðŸ˜ðŸ˜›ðŸ˜„', '2019-07-05 15:06:18', 1),
-(52, 7, 4, 'ðŸ˜ðŸ˜ðŸ˜ðŸ˜ðŸ˜ðŸ˜ðŸ˜†ðŸ˜†ðŸ˜†', '2019-07-05 15:06:28', 1),
-(53, 10, 4, 'Ola boa tarde ðŸ˜„ðŸ˜„ðŸ˜„ðŸ˜„ðŸ˜„ðŸ˜„ðŸ˜„', '2019-07-05 15:07:17', 0),
-(54, 4, 10, 'boas', '2019-07-05 15:07:31', 0),
-(55, 7, 4, 'olaðŸ¤©ðŸ¤©ðŸ¤©ðŸ¤©', '2019-07-08 11:24:59', 1),
-(56, 10, 4, 'bons dias ðŸ˜ŽðŸ˜ŽðŸ˜Ž', '2019-07-08 11:25:34', 0),
-(57, 4, 10, 'boas ðŸ˜Ž', '2019-07-08 11:26:00', 0);
+(64, 4, 7, '😆😆😆😆😆', '2019-11-25 12:50:58', 1),
+(65, 4, 7, '🙀🙀🙀🙀', '2019-11-25 12:51:03', 1),
+(66, 10, 7, '😄😄😄😄', '2019-11-25 12:51:28', 0),
+(67, 7, 10, '😕😕😕😕', '2019-11-25 12:53:49', 0),
+(68, 0, 7, 'aaa', '2019-11-25 12:54:00', 1),
+(69, 4, 7, '👞👞👞', '2019-11-25 14:46:51', 1);
 
 -- --------------------------------------------------------
 
@@ -154,8 +127,8 @@ CREATE TABLE `comment` (
 --
 
 INSERT INTO `comment` (`id`, `com`, `user_id`, `blog_id`, `hora_pub`, `data_pub`) VALUES
-(1, 'Whatta', 7, 1, '23:28:00', '2019-06-10'),
-(2, 'Velocidade e Saude\nlol\npreço', 7, 1, '17:10:00', '2019-07-02'),
+(1, 'What', 7, 1, '12:27:00', '2019-11-25'),
+(2, 'Velocidade e Saude\nlol\npreço', 7, 1, '12:27:00', '2019-11-25'),
 (7, 'Tributo Negro', 4, 2, '12:51:00', '2019-07-03'),
 (8, 'Nao gosto', 4, 1, '16:05:00', '2019-07-05');
 
@@ -267,7 +240,8 @@ INSERT INTO `cursos_videos` (`id`, `cursos_id`, `categoria`, `funcoes`, `context
 (76, 6, 'Commission Setup', 'Commission Setup ', 'This video covers the following topics<br /><i class=\"fas fa-caret-right\"></i> An overview of how to set up the Commissions<br /><i class=\"fas fa-caret-right\"></i> How to define SPA Staff and Application Users eligible for commission and/or tip<br /><i class=\"fas fa-caret-right\"></i> How to assign a commission to a specific Staff<br /><i class=\"fas fa-caret-right\"></i> How to set up Commission Rules<br /><i class=\"fas fa-caret-right\"></i> How to duplicate setup Staff Commissions<br />', 'POS_Setup_CommissionsEdit.mp4'),
 (77, 6, 'Gift Card Setup', 'Overview of Gift Card', 'This video describes the GIft Card functionality. ', 'POS_Config_GiftCards_OverviewEdit.mp4'),
 (79, 6, 'Gift Card Setup', 'Value Based On Gift Card Setup', 'This video describes how to set up \"Value Only\" Gift Cards<br /><br />', 'POS_Config_GiftCards_ValueBasedEdit.mp4'),
-(80, 6, 'Gift Card Setup', 'Activity & Retail', 'This video describes how to set up an \"Activity & Retail\" Gift Card.', 'POS_Config_GiftCards_ActivityRetailEdit.mp4');
+(80, 6, 'Gift Card Setup', 'Activity & Retail', 'This video describes how to set up an \"Activity & Retail\" Gift Card.', 'POS_Config_GiftCards_ActivityRetailEdit.mp4'),
+(81, 1, 'Ola', 'aaa', 'aaa', 'folder.gif');
 
 -- --------------------------------------------------------
 
@@ -318,7 +292,7 @@ INSERT INTO `grades_cursos` (`id`, `cursos_id`, `calcular_media`, `graus`, `perc
 (1, 1, '91.00', '90-100', 91, 'Linda Media'),
 (4, 5, '80.00', '80-89', 80, 'aaa'),
 (5, 23, '66.00', '50-69', 66, 'Muito Mal'),
-(6, 23, '76.00', '70-79', 76, '');
+(6, 23, '55.00', '50-69', 55, '');
 
 -- --------------------------------------------------------
 
@@ -436,147 +410,150 @@ INSERT INTO `sessao_logged` (`login_id`, `user_id`, `last_activity`) VALUES
 (54, 10, '2019-07-09 16:08:48'),
 (55, 7, '2019-07-10 13:08:26'),
 (56, 7, '2019-07-10 13:27:52'),
-(57, 7, '2019-07-10 13:29:32');
+(57, 7, '2019-07-10 13:29:32'),
+(58, 7, '2019-11-25 20:02:09'),
+(59, 10, '2019-11-25 12:53:39'),
+(60, 10, '2019-11-25 13:15:06');
 
 --
--- Indexes for dumped tables
+-- Índices para tabelas despejadas
 --
 
 --
--- Indexes for table `admins`
+-- Índices para tabela `admins`
 --
 ALTER TABLE `admins`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `blog`
+-- Índices para tabela `blog`
 --
 ALTER TABLE `blog`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `chat_message`
+-- Índices para tabela `chat_message`
 --
 ALTER TABLE `chat_message`
   ADD PRIMARY KEY (`chat_message_id`);
 
 --
--- Indexes for table `comment`
+-- Índices para tabela `comment`
 --
 ALTER TABLE `comment`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `cursos`
+-- Índices para tabela `cursos`
 --
 ALTER TABLE `cursos`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `cursos_videos`
+-- Índices para tabela `cursos_videos`
 --
 ALTER TABLE `cursos_videos`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `events`
+-- Índices para tabela `events`
 --
 ALTER TABLE `events`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `grades_cursos`
+-- Índices para tabela `grades_cursos`
 --
 ALTER TABLE `grades_cursos`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `private_files_users`
+-- Índices para tabela `private_files_users`
 --
 ALTER TABLE `private_files_users`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `privilegios`
+-- Índices para tabela `privilegios`
 --
 ALTER TABLE `privilegios`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `sessao_logged`
+-- Índices para tabela `sessao_logged`
 --
 ALTER TABLE `sessao_logged`
   ADD PRIMARY KEY (`login_id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT de tabelas despejadas
 --
 
 --
--- AUTO_INCREMENT for table `admins`
+-- AUTO_INCREMENT de tabela `admins`
 --
 ALTER TABLE `admins`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
--- AUTO_INCREMENT for table `blog`
+-- AUTO_INCREMENT de tabela `blog`
 --
 ALTER TABLE `blog`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `chat_message`
+-- AUTO_INCREMENT de tabela `chat_message`
 --
 ALTER TABLE `chat_message`
-  MODIFY `chat_message_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
+  MODIFY `chat_message_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=70;
 
 --
--- AUTO_INCREMENT for table `comment`
+-- AUTO_INCREMENT de tabela `comment`
 --
 ALTER TABLE `comment`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- AUTO_INCREMENT for table `cursos`
+-- AUTO_INCREMENT de tabela `cursos`
 --
 ALTER TABLE `cursos`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
--- AUTO_INCREMENT for table `cursos_videos`
+-- AUTO_INCREMENT de tabela `cursos_videos`
 --
 ALTER TABLE `cursos_videos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=81;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=82;
 
 --
--- AUTO_INCREMENT for table `events`
+-- AUTO_INCREMENT de tabela `events`
 --
 ALTER TABLE `events`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 
 --
--- AUTO_INCREMENT for table `grades_cursos`
+-- AUTO_INCREMENT de tabela `grades_cursos`
 --
 ALTER TABLE `grades_cursos`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT for table `private_files_users`
+-- AUTO_INCREMENT de tabela `private_files_users`
 --
 ALTER TABLE `private_files_users`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
--- AUTO_INCREMENT for table `privilegios`
+-- AUTO_INCREMENT de tabela `privilegios`
 --
 ALTER TABLE `privilegios`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `sessao_logged`
+-- AUTO_INCREMENT de tabela `sessao_logged`
 --
 ALTER TABLE `sessao_logged`
-  MODIFY `login_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
+  MODIFY `login_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=61;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

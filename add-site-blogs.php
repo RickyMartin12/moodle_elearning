@@ -417,8 +417,6 @@
                             $(".load").show();
                         $('.debug-url').html('Blog on User <?php echo $_COOKIE['username'] ?> was created successfully');
                         $('#Modalok').modal('show');
-
-                        
                     }
 		        },
 		        error: function() {
@@ -426,10 +424,6 @@
             		$('#Modalko').modal('show');
 		        }
 		    });
-
-
-
-    		
     	});
 
     	$(".btn-clear").on('click', function(e)
