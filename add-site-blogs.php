@@ -98,18 +98,10 @@
 
 															<input id="list_f_blogs" type="hidden" />
 															</div>
-
-
-
 													</div>
 												</div>
 											  </div>
 											</div>
-
-
-
-
-
 
 								</div>
 
@@ -191,33 +183,29 @@
     		$("#file_on").css('display', 'block');
   		});
 
+
+
   		tinymce.init({
 		  	selector: '#content_blog',
 		  	themes: 'modern',
 		  	height: 200,
 		  	plugins: "image media",
 		  	file_picker_callback: function(callback, value, meta) {
-		        
 		        // File type
 		        if (meta.filetype =="media" || meta.filetype =="image") {
-
 		        	// Trigger click on file element
 		            jQuery("#fileupload").trigger("click");
 		            $("#fileupload").unbind('change');
-
 		            // File selection
 		            jQuery("#fileupload").on("change", function() {
 		                var file = this.files[0];
 		                var reader = new FileReader();
-		                
 		                // FormData
 		                var fd = new FormData();
 		                var files = file;
 		                fd.append("file",files);
 		                fd.append('filetype',meta.filetype);
-
 		                var filename = "";
-		                
 		                // AJAX
 		                jQuery.ajax({
 		                    url: "upload.php",
