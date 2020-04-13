@@ -19,15 +19,15 @@ $error_message = '';
 
 if ($per_1 == '')
 {
-  $error_message .= '<p> - Resposta da Pergunta 1 *</p>';
+  $error_message .= '<p> - Answer the question number 1 *</p>';
 }
 if ($per_2 == '')
 {
-  $error_message .= '<p> - Resposta da Pergunta 2 *</p>';
+  $error_message .= '<p> - Answer the question number 2 *</p>';
 }
 if ($per_3 == '')
 {
-  $error_message .= '<p> - Resposta da Pergunta 3 *</p>';
+  $error_message .= '<p> - Answer the question number 3 *</p>';
 }
 
 
@@ -224,11 +224,9 @@ if ($error_message == '')
         if (mail($to, $subject, $body_c, $headers)) {
 
 	        $msgsuccess = 'Mail Send Successfully';
-            echo 0;
 	    } else {
 
 	        $msgerror = 'Main not send';
-            echo 11;
 	    }
 
 }

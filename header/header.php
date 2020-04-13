@@ -3,7 +3,7 @@
 <head>
 <title>Moodle eLearning Concepted</title>
 
-
+<link rel="shortcut icon" href="/moodle/favicon.ico">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Moodle Concpted Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -25,23 +25,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<script>
 		$(function () {
 			$('#supported').text('Supported/allowed: ' + !!screenfull.enabled);
-
 			if (!screenfull.enabled) {
 				return false;
 			}
-
-			
-
 			$('#toggle').click(function () {
 				screenfull.toggle($('#container')[0]);
 			});
-
-			
-
-			
 		});
 		</script>
-
         <style type="text/css">
             
             .btn-ques
