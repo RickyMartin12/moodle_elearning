@@ -15,11 +15,11 @@ session_start();
 	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-    <link rel="stylesheet" href="/moodle/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-    <link rel="stylesheet" href="/moodle/css/font-awesome.css">
-    <link rel="stylesheet" href="/moodle/css/login.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
 
@@ -262,7 +262,7 @@ h1 {
 <body id="back-color">
 
 <video autoplay preload="auto" loop="loop" muted="muted" id="myvideo">
-  <source src="/moodle/video/Intro.mp4" type="video/mp4">
+  <source src="video/Intro.mp4" type="video/mp4">
 </video>
 
 <div class="back">
@@ -433,12 +433,12 @@ h1 {
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="/moodle/js/bootstrap.min.js"></script>
-<script src="/moodle/js/canvas-video-player.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/canvas-video-player.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/md5.js"></script>
 <!-- scripts -->
-<script src="/moodle/js/particles.js"></script>
-<script src="/moodle/js/app.js"></script>
+<script src="js/particles.js"></script>
+<script src="js/app.js"></script>
 
 <!-- stats.js -->
 <script>
@@ -537,7 +537,7 @@ $(document).ready(function() {
 
 function move() 
 {
-   $('.logo_insert').prop('src','/moodle/images/cs.png');
+   $('.logo_insert').prop('src','images/cs.png');
    $('.logo_insert').addClass('w3-animate-zoom');
       
     
@@ -653,7 +653,7 @@ $("#myButton").on("click", function(e)
           obj = JSON.parse(data);
           if (obj.error){
             var obj2 = document.createElement("audio");
-            obj2.src = "/moodle/Sound/error.mp3";
+            obj2.src = "Sound/error.mp3";
             
                   obj2.volume = 0.1;
                   obj2.autoPlay = false;
@@ -670,7 +670,7 @@ $("#myButton").on("click", function(e)
           }
           else if (obj.success){
             var obj1 = document.createElement("audio");
-              obj1.src = "/moodle/Sound/success.mp3";
+              obj1.src = "Sound/success.mp3";
               obj1.volume = 0.1;
               obj1.autoPlay = false;
               obj1.preLoad = true;
@@ -687,7 +687,7 @@ $("#myButton").on("click", function(e)
         },
         error: function() {
           var obj2 = document.createElement("audio");
-          obj2.src = "/moodle/Sound/error.mp3";
+          obj2.src = "Sound/error.mp3";
                   obj2.volume = 0.1;
                   obj2.autoPlay = false;
                   obj2.preLoad = true;
