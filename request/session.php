@@ -3,7 +3,7 @@ header('Access-Control-Allow-Origin: *');
 header('Content-Type: text/html; charset=utf-8');
 
 
-require_once 'connect.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/connect.php';
 
 
 session_start();
