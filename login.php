@@ -2,9 +2,6 @@
 
 session_start();
 
-    require $_SERVER['DOCUMENT_ROOT']. "/request/nocsrf.php";
-    $token = NoCSRF::generate( 'csrf_token' );
-
 ?>
 
 <!doctype html>
