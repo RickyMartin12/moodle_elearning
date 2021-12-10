@@ -30,7 +30,7 @@ else{
 </style>
 
 
-<link rel="shortcut icon" href="../moodle/favicon.ico">
+<link rel="shortcut icon" href="http://elearning298.conceptsoftware.eu/theme/image.php/more/theme/1520363512/favicon">
 
 <?php
 
