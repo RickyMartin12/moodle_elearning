@@ -3,25 +3,25 @@
 <head>
 <title>Moodle eLearning Concepted</title>
 
-<link rel="shortcut icon" href="/moodle/favicon.ico">
+<link rel="shortcut icon" href="favicon.ico">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Moodle Concpted Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<link href="/moodle/css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+<link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/moodle/css/bootstrap-switch.min.css">
+  <link rel="stylesheet" href="css/bootstrap-switch.min.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-<link href="/moodle/css/w3.css" rel='stylesheet' type='text/css' />
-<link href="/moodle/css/style.css" rel='stylesheet' type='text/css' />
-<link href="/moodle/css/font-awesome.css" rel="stylesheet"> 
-<script src="/moodle/js/jquery.min.js"> </script>
-<script src="/moodle/js/jquery.metisMenu.js"></script>
-<script src="/moodle/js/jquery.slimscroll.min.js"></script>
-<link href="/moodle/css/custom.css" rel="stylesheet">
-<script src="/moodle/js/custom.js"></script>
-<script src="/moodle/js/screenfull.js"></script>
+<link href="css/w3.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<script src="js/jquery.min.js"> </script>
+<script src="js/jquery.metisMenu.js"></script>
+<script src="js/jquery.slimscroll.min.js"></script>
+<link href="css/custom.css" rel="stylesheet">
+<script src="js/custom.js"></script>
+<script src="js/screenfull.js"></script>
 		<script>
 		$(function () {
 			$('#supported').text('Supported/allowed: ' + !!screenfull.enabled);
@@ -45,7 +45,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 border-color: #269abc!important;
             }
         </style>
-<script src="/moodle/js/skycons.js"></script>
+<script src="js/skycons.js"></script>
 <!--//skycons-icons-->
 </head>
 <body>
@@ -90,7 +90,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-               <h1> <a class="navbar-brand" href="/moodle/index.php"><img src="/moodle/images/cs.png" class="img-responsive" title="Welcome to Concept Software Systems eLearning"></a></h1>         
+               <h1> <a class="navbar-brand" href="index.php"><img src="images/cs.png" class="img-responsive" title="Welcome to Concept Software Systems eLearning"></a></h1>         
 			   </div>
 			 <div class=" border-bottom">
         	<div class="full-left">
@@ -98,8 +98,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <button type="button" class="btn btn-info btn-ques" id="quest_click" title="Click the Questionnare"><i class="fas fa-clipboard-list" style="margin-left: 0px; margin-right: 0px; margin-bottom: 3px; margin-top: 2px;"></i></button>
 
         	  
-			<!-- <a class='flags' href='/moodle/index.php?lang=pt' title='PT'><img src ='/moodle/images/pt.png' style='width:35px;'></a>
-			           <a class='flags2' href='/moodle/index.php?lang=en'  title='EN-US'><img src ='/moodle/images/en.png' style='width:35px;'></a> -->
+			<!-- <a class='flags' href='index.php?lang=pt' title='PT'><img src ='images/pt.png' style='width:35px;'></a>
+			           <a class='flags2' href='index.php?lang=en'  title='EN-US'><img src ='images/en.png' style='width:35px;'></a> -->
 
 
             
@@ -124,13 +124,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 		    		
 					<li class="dropdown">
-		              <a href="#" class="dropdown-toggle dropdown-at" data-toggle="dropdown"><span class=" name-caret"><font id="logged_username_name"><?php echo $_COOKIE["username"] ?></font><i class="caret"></i></span><img src="/moodle/images/users/<?php echo $_COOKIE['logotipo'] ?>" id="logged_username_img"></a>
+		              <a href="#" class="dropdown-toggle dropdown-at" data-toggle="dropdown"><span class=" name-caret"><font id="logged_username_name"><?php echo $_COOKIE["username"] ?></font><i class="caret"></i></span><img src="images/users/<?php echo $_COOKIE['logotipo'] ?>" id="logged_username_img"></a>
 		              <ul class="dropdown-menu" id="menu_drop" role="menu">
-		                <li class="info_dashobaord"><a href="/moodle/dashboard.php"><i class="fas fa-tachometer-alt"></i>Dashboard</a></li>
-		                <li><a href="/moodle/profile.php"><i class="fa fa-user"></i>Edit Profile</a></li>
-		                <li><a href="/moodle/grades.php"><i class="fa fa-th"></i>Grades</a></li>
-		                <li><a href="/moodle/definitions.php"><i class="fa fa-cog"></i>Definitions</a></li>
-		                <li class="logout"><a href="/moodle/logout.php"><i class="fas fa-sign-out-alt"></i>Logout</a></li>
+		                <li class="info_dashobaord"><a href="dashboard.php"><i class="fas fa-tachometer-alt"></i>Dashboard</a></li>
+		                <li><a href="profile.php"><i class="fa fa-user"></i>Edit Profile</a></li>
+		                <li><a href="grades.php"><i class="fa fa-th"></i>Grades</a></li>
+		                <li><a href="definitions.php"><i class="fa fa-cog"></i>Definitions</a></li>
+		                <li class="logout"><a href="logout.php"><i class="fas fa-sign-out-alt"></i>Logout</a></li>
 		              </ul>
 		            </li>
 		           
@@ -158,7 +158,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <a href="#" class=" hvr-bounce-to-right"><i class="fa fa-home nav_icon"></i> <span class="nav-label">Home</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <?php if ($_COOKIE['home_dashboard'] == 'checked') { ?>
-                                <li><a href="/moodle/dashboard.php" class=" hvr-bounce-to-right"> <i class="fas fa-tachometer-alt nav_icon"></i>Dashboard</a></li>
+                                <li><a href="dashboard.php" class=" hvr-bounce-to-right"> <i class="fas fa-tachometer-alt nav_icon"></i>Dashboard</a></li>
                             <?php } ?>
 
                             <?php if ($_COOKIE['home_site_pages'] == 'checked') { ?>
@@ -169,20 +169,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
                                 <?php if ($_COOKIE['home_site_pages_site_blogs'] == 'checked') { ?>
-	                            	<li><a href="/moodle/site-blogs.php" class=" hvr-bounce-to-right"><i class="fab fa-blogger nav_icon"></i>Site Blogs</a></li>
+	                            	<li><a href="site-blogs.php" class=" hvr-bounce-to-right"><i class="fab fa-blogger nav_icon"></i>Site Blogs</a></li>
                                 <?php } ?>
 
 
                                 <?php if ($_COOKIE['home_site_pages_site_badges'] == 'checked') { ?>
-	                            	<li><a href="/moodle/site-badges.php" class=" hvr-bounce-to-right"><i class="fas fa-id-badge nav_icon"></i>Site Badges</a></li>
+	                            	<li><a href="site-badges.php" class=" hvr-bounce-to-right"><i class="fas fa-id-badge nav_icon"></i>Site Badges</a></li>
                                 <?php } ?>
 
                                 <?php if ($_COOKIE['home_site_pages_calendar'] == 'checked') { ?>
-	                            	<li><a href="/moodle/calendar.php" class=" hvr-bounce-to-right"><i class="fa fa-calendar nav_icon"></i>Calendar</a></li>
+	                            	<li><a href="calendar.php" class=" hvr-bounce-to-right"><i class="fa fa-calendar nav_icon"></i>Calendar</a></li>
                                 <?php } ?>
 
                                 <?php if ($_COOKIE['home_site_pages_site_news'] == 'checked') { ?>
-	                            	<li><a href="/moodle/site-news.php" class=" hvr-bounce-to-right"><i class="far fa-newspaper nav_icon"></i>Site News</a></li>
+	                            	<li><a href="site-news.php" class=" hvr-bounce-to-right"><i class="far fa-newspaper nav_icon"></i>Site News</a></li>
                                 <?php } ?>
 
 
@@ -205,10 +205,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<li><a href="#" class=" hvr-bounce-to-right"><i class="fas fa-spa nav_icon"></i><span class="nav-label">SPA & LEISURE</span><span class="fa arrow"></span></a>
 
 									<ul class="nav nav-second-level">
-										<li><a href="/moodle/spa/spa-geral.php" class=" hvr-bounce-to-right"><i class="far fa-file-alt nav_icon"></i>Overview</a></li>
-                        				<li><a href="/moodle/spa/spa-badges.php" class=" hvr-bounce-to-right"><i class="fas fa-id-card-alt nav_icon"></i>Badges</a></li>
-                        				<li><a href="/moodle/spa/spa-comp.php" class=" hvr-bounce-to-right"><i class="fas fa-concierge-bell nav_icon"></i>Competencies</a></li>
-                        				<li><a href="/moodle/spa/spa-grades.php" class=" hvr-bounce-to-right"><i class="fa fa-th nav_icon"></i>Grades</a></li>
+										<li><a href="spa/spa-geral.php" class=" hvr-bounce-to-right"><i class="far fa-file-alt nav_icon"></i>Overview</a></li>
+                        				<li><a href="spa/spa-badges.php" class=" hvr-bounce-to-right"><i class="fas fa-id-card-alt nav_icon"></i>Badges</a></li>
+                        				<li><a href="spa/spa-comp.php" class=" hvr-bounce-to-right"><i class="fas fa-concierge-bell nav_icon"></i>Competencies</a></li>
+                        				<li><a href="spa/spa-grades.php" class=" hvr-bounce-to-right"><i class="fa fa-th nav_icon"></i>Grades</a></li>
                         			</ul>
 
 
@@ -225,10 +225,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
 									<ul class="nav nav-second-level">
-										<li><a href="/moodle/pos/pos-geral.php" class=" hvr-bounce-to-right"><i class="far fa-file-alt nav_icon"></i>Overview</a></li>
-                        				<li><a href="/moodle/pos/pos-badges.php" class=" hvr-bounce-to-right"><i class="fas fa-id-card-alt nav_icon"></i>Badges</a></li>
-                        				<li><a href="/moodle/pos/pos-comp.php" class=" hvr-bounce-to-right"><i class="fas fa-concierge-bell nav_icon"></i>Competencies</a></li>
-                        				<li><a href="/moodle/pos/pos-grades.php" class=" hvr-bounce-to-right"><i class="fa fa-th nav_icon"></i>Grades</a></li>
+										<li><a href="pos/pos-geral.php" class=" hvr-bounce-to-right"><i class="far fa-file-alt nav_icon"></i>Overview</a></li>
+                        				<li><a href="pos/pos-badges.php" class=" hvr-bounce-to-right"><i class="fas fa-id-card-alt nav_icon"></i>Badges</a></li>
+                        				<li><a href="pos/pos-comp.php" class=" hvr-bounce-to-right"><i class="fas fa-concierge-bell nav_icon"></i>Competencies</a></li>
+                        				<li><a href="pos/pos-grades.php" class=" hvr-bounce-to-right"><i class="fa fa-th nav_icon"></i>Grades</a></li>
                         			</ul>
 
 
@@ -242,10 +242,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<li><a href="#" class="hvr-bounce-to-right"><i class="fab fa-markdown nav_icon"></i><span class="nav-label">Member Marketing</span><span class="fa arrow"></span></a>
 
 									<ul class="nav nav-second-level">
-										<li><a href="/moodle/mem/mem-geral.php" class=" hvr-bounce-to-right"><i class="far fa-file-alt nav_icon"></i>Overview</a></li>
-                        				<li><a href="/moodle/mem/mem-badges.php" class=" hvr-bounce-to-right"><i class="fas fa-id-card-alt nav_icon"></i>Badges</a></li>
-                        				<li><a href="/moodle/mem/mem-comp.php" class=" hvr-bounce-to-right"><i class="fas fa-concierge-bell nav_icon"></i>Competencies</a></li>
-                        				<li><a href="/moodle/mem/mem-grades.php" class=" hvr-bounce-to-right"><i class="fa fa-th nav_icon"></i>Grades</a></li>
+										<li><a href="mem/mem-geral.php" class=" hvr-bounce-to-right"><i class="far fa-file-alt nav_icon"></i>Overview</a></li>
+                        				<li><a href="mem/mem-badges.php" class=" hvr-bounce-to-right"><i class="fas fa-id-card-alt nav_icon"></i>Badges</a></li>
+                        				<li><a href="mem/mem-comp.php" class=" hvr-bounce-to-right"><i class="fas fa-concierge-bell nav_icon"></i>Competencies</a></li>
+                        				<li><a href="mem/mem-grades.php" class=" hvr-bounce-to-right"><i class="fa fa-th nav_icon"></i>Grades</a></li>
                         			</ul>
 
 								</li>
@@ -257,10 +257,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<li><a href="#" class="hvr-bounce-to-right"><i class="fas fa-warehouse nav_icon"></i><span class="nav-label">Inventory</span><span class="fa arrow"></span></a>
 
 									<ul class="nav nav-second-level">
-										<li><a href="/moodle/inv/inv-geral.php" class=" hvr-bounce-to-right"><i class="far fa-file-alt nav_icon"></i>Overview</a></li>
-                        				<li><a href="/moodle/inv/inv-badges.php" class=" hvr-bounce-to-right"><i class="fas fa-id-card-alt nav_icon"></i>Badges</a></li>
-                        				<li><a href="/moodle/inv/inv-comp.php" class=" hvr-bounce-to-right"><i class="fas fa-concierge-bell nav_icon"></i>Competencies</a></li>
-                        				<li><a href="/moodle/inv/inv-grades.php" class=" hvr-bounce-to-right"><i class="fa fa-th nav_icon"></i>Grades</a></li>
+										<li><a href="inv/inv-geral.php" class=" hvr-bounce-to-right"><i class="far fa-file-alt nav_icon"></i>Overview</a></li>
+                        				<li><a href="inv/inv-badges.php" class=" hvr-bounce-to-right"><i class="fas fa-id-card-alt nav_icon"></i>Badges</a></li>
+                        				<li><a href="inv/inv-comp.php" class=" hvr-bounce-to-right"><i class="fas fa-concierge-bell nav_icon"></i>Competencies</a></li>
+                        				<li><a href="inv/inv-grades.php" class=" hvr-bounce-to-right"><i class="fa fa-th nav_icon"></i>Grades</a></li>
                         			</ul>
 
 								</li>
@@ -273,10 +273,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<li><a href="#" class="hvr-bounce-to-right"><i class="fas fa-golf-ball nav_icon"></i><span class="nav-label">Golf Management</span><span class="fa arrow"></span></a>
 
 									<ul class="nav nav-second-level">
-										<li><a href="/moodle/golf/golf-geral.php" class=" hvr-bounce-to-right"><i class="far fa-file-alt nav_icon"></i>Overview</a></li>
-                        				<li><a href="/moodle/golf/golf-badges.php" class=" hvr-bounce-to-right"><i class="fas fa-id-card-alt nav_icon"></i>Badges</a></li>
-                        				<li><a href="/moodle/golf/golf-comp.php" class=" hvr-bounce-to-right"><i class="fas fa-concierge-bell nav_icon"></i>Competencies</a></li>
-                        				<li><a href="/moodle/golf/golf-grades.php" class=" hvr-bounce-to-right"><i class="fa fa-th nav_icon"></i>Grades</a></li>
+										<li><a href="golf/golf-geral.php" class=" hvr-bounce-to-right"><i class="far fa-file-alt nav_icon"></i>Overview</a></li>
+                        				<li><a href="golf/golf-badges.php" class=" hvr-bounce-to-right"><i class="fas fa-id-card-alt nav_icon"></i>Badges</a></li>
+                        				<li><a href="golf/golf-comp.php" class=" hvr-bounce-to-right"><i class="fas fa-concierge-bell nav_icon"></i>Competencies</a></li>
+                        				<li><a href="golf/golf-grades.php" class=" hvr-bounce-to-right"><i class="fa fa-th nav_icon"></i>Grades</a></li>
                         			</ul>
 
 								</li>
@@ -302,11 +302,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</ul>
                     </li>-->
 
-                    <li><a href="/moodle/categoria/ver-categories.php" class=" hvr-bounce-to-right"> <i class="fa fa-list-alt nav_icon"></i>Ver Categories</a></li>
+                    <li><a href="categoria/ver-categories.php" class=" hvr-bounce-to-right"> <i class="fa fa-list-alt nav_icon"></i>Ver Categories</a></li>
 
-                    <li><a href="/moodle/grades/view-grades.php" class=" hvr-bounce-to-right"> <i class="fa fa-th nav_icon"></i>Ver Grades</a></li>
+                    <li><a href="grades/view-grades.php" class=" hvr-bounce-to-right"> <i class="fa fa-th nav_icon"></i>Ver Grades</a></li>
 
-                     <li><a href="/moodle/chat/index.php" class=" hvr-bounce-to-right"> <i class="fas fa-sms nav_icon"></i>Chat</a></li>
+                     <li><a href="chat/index.php" class=" hvr-bounce-to-right"> <i class="fas fa-sms nav_icon"></i>Chat</a></li>
 
 
                 </ul>
@@ -316,22 +316,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <li>
                     	<a href="#" class=" hvr-bounce-to-right"><i class="fas fa-user nav_icon"></i> <span class="nav-label">Administrator</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                        	<li><a href="/moodle/admin/notifications.php" class=" hvr-bounce-to-right"><i class="fas fa-bell nav_icon"></i>Notifications</a></li>
-                        	<li><a href="/moodle/admin/register-user.php" class=" hvr-bounce-to-right"><i class="fa fa-user nav_icon"></i>Registry User</a></li>
-                        	<li><a href="/moodle/admin/adv-features.php" class=" hvr-bounce-to-right"><i class="fas fa-shield-alt nav_icon"></i>Advanced Features</a></li>
-                            <li><a href="/moodle/admin/lists_users.php" class=" hvr-bounce-to-right"><i class="fas fa-users nav_icon"></i>Users Lists</a></li>
+                        	<li><a href="admin/notifications.php" class=" hvr-bounce-to-right"><i class="fas fa-bell nav_icon"></i>Notifications</a></li>
+                        	<li><a href="admin/register-user.php" class=" hvr-bounce-to-right"><i class="fa fa-user nav_icon"></i>Registry User</a></li>
+                        	<li><a href="admin/adv-features.php" class=" hvr-bounce-to-right"><i class="fas fa-shield-alt nav_icon"></i>Advanced Features</a></li>
+                            <li><a href="admin/lists_users.php" class=" hvr-bounce-to-right"><i class="fas fa-users nav_icon"></i>Users Lists</a></li>
 
 
                             <li><a href="user-security.html" class="hvr-bounce-to-right"><i class="fas fa-graduation-cap nav_icon"></i><span class="nav-label">Courses / Categories</span><span class="fa arrow"></span></a>
 
                                     <ul class="nav nav-second-level">
                                   
-                                        <li><a href="/moodle/cursos/content-cursos.php" class=" hvr-bounce-to-right"><i class="fas fa-tag nav_icon"></i>List Courses </a></li>
+                                        <li><a href="cursos/content-cursos.php" class=" hvr-bounce-to-right"><i class="fas fa-tag nav_icon"></i>List Courses </a></li>
 
-                                        <li><a href="/moodle/categoria/content-categoria-cursos.php" class=" hvr-bounce-to-right"><i class="fas fa-tags nav_icon"></i>List Categories </a></li>
+                                        <li><a href="categoria/content-categoria-cursos.php" class=" hvr-bounce-to-right"><i class="fas fa-tags nav_icon"></i>List Categories </a></li>
 
 
-                                        <li><a href="/moodle/categoria/edit-content-categoria-cursos.php" class=" hvr-bounce-to-right"><i class="fas fa-edit nav_icon"></i>Edit Categories </a></li>
+                                        <li><a href="categoria/edit-content-categoria-cursos.php" class=" hvr-bounce-to-right"><i class="fas fa-edit nav_icon"></i>Edit Categories </a></li>
                                         
                                     </ul>
                                 </li>
@@ -342,7 +342,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                     <ul class="nav nav-second-level">
 
 
-                                        <li><a href="/moodle/grades/edit-grades.php" class=" hvr-bounce-to-right"><i class="fas fa-edit nav_icon"></i>Edit Grades </a></li>
+                                        <li><a href="grades/edit-grades.php" class=" hvr-bounce-to-right"><i class="fas fa-edit nav_icon"></i>Edit Grades </a></li>
                                         
                                     </ul>
                                 </li>
@@ -356,7 +356,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
         </nav>
 
-        <?php include $_SERVER['DOCUMENT_ROOT']. "/moodle/modals.php"; ?>
+        <?php include $_SERVER['DOCUMENT_ROOT']. "modals.php"; ?>
 
 
 
@@ -428,7 +428,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <p style='text-align:center; margin:0;'><img src="/moodle/images/cs.png" class="logo-nav" style="width:68px;"></p>
+                        <p style='text-align:center; margin:0;'><img src="images/cs.png" class="logo-nav" style="width:68px;"></p>
                         <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times-circle" aria-hidden="true"> </i><font class="hidden-xs"> Cancel</font></button>
                         <button title="Guardar as alterações do blogue" type="button" class="btn btn-info" onclick="saveQuest();"> <span class="glyphicon glyphicon-send"></span><font class="hidden-xs"> Send Questionnaire</font></button>
                     </div>
