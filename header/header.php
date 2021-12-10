@@ -3,7 +3,7 @@
 <head>
 <title>Moodle eLearning Concepted</title>
 
-<link rel="shortcut icon" href="../favicon.ico">
+<link rel="shortcut icon" href="http://elearning298.conceptsoftware.eu/theme/image.php/more/theme/1520363512/favicon">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Moodle Concpted Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
