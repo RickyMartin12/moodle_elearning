@@ -128,7 +128,7 @@ if (session_destroy()) {
     <h2 id="tm">10</h2>
     <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg" style="margin: auto; position: absolute; left: 0; right: 0;">
      <g>
-      <title>Layer 1</title>
+      <title>Moodle Logout</title>
       <circle id="circle" class="circle_animation" r="69.85699" cy="81" cx="81" stroke-width="8" stroke="#6fdb6f" fill="none"/>
      </g>
     </svg>
@@ -137,9 +137,9 @@ if (session_destroy()) {
     <hr style="position: absolute; width: 100%; top: 80%; bottom: 80%;">
     </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="/moodle/js/canvas-video-player.js"></script>
-    <script src="/moodle/js/particles.js"></script>
-    <script src="/moodle/js/app.js"></script>
+    <script src="js/canvas-video-player.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
     <script type="text/javascript">
     var time = 0;
 var initialOffset = "440";
