@@ -154,7 +154,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/connect.php';
                   setcookie("login_id", $_SESSION['login_id'], time() + (86400 * 30), "/");
                   
 
-                  $success='../moodle/index.php';
+                  $success='../index.php';
                   $arr = array('error'=>'', 'id'=>$_SESSION['pr_uid'], 'success'=>$success);
 
                 }
