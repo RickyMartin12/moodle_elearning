@@ -27,7 +27,7 @@ opacity:1;
       </div>
       <div class="modal-footer">
 
-    <p style='text-align:center; margin:0;'><img src="/moodle/images/cs.png" style="width:120px;"></p>   
+    <p style='text-align:center; margin:0;'><img src="/images/cs.png" style="width:120px;"></p>   
  </div>
     </div>
   </div>
@@ -46,7 +46,7 @@ opacity:1;
       </div>
       <div class="modal-footer">
 
- <p style='text-align:center; margin:0;'><img src="/moodle/images/cs.png" style="width:120px;"></p>  
+ <p style='text-align:center; margin:0;'><img src="/images/cs.png" style="width:120px;"></p>  
 
 <!--
         <button type="button" class="btn btn-default" data-dismiss="modal"><span class='glyphicon glyphicon-remove-sign'></span> Fechar</button>
