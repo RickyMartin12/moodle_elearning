@@ -356,7 +356,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
         </nav>
 
-        <?php include $_SERVER['DOCUMENT_ROOT']. "modals.php"; ?>
+        <?php include $_SERVER['DOCUMENT_ROOT']. "/modals.php"; ?>
 
 
 
