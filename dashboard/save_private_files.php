@@ -1,6 +1,6 @@
 <?php
 
-require $_SERVER['DOCUMENT_ROOT']. "/moodle/connect.php";
+require $_SERVER['DOCUMENT_ROOT']. "/connect.php";
 
 function is_array_empty($arr){
   if(is_array($arr)){     

@@ -1,6 +1,6 @@
 <?php
 
-require $_SERVER['DOCUMENT_ROOT']. "/moodle/connect.php";
+require $_SERVER['DOCUMENT_ROOT']. "/connect.php";
 
 
 if (isset($_POST['action']))

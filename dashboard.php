@@ -665,7 +665,7 @@
                         $('.debug-url').html('File(s) was added successfully');
 			            $('#Modalok').modal('show');
 			            var obj = document.createElement("audio");
-						  obj.src = "/moodle/Sound/success.mp3";
+						  obj.src = "/Sound/success.mp3";
 						  obj.volume = 0.1;
 						  obj.autoPlay = false;
 						  obj.preLoad = true;
@@ -694,7 +694,7 @@
 			          $('.debug-url').html('File was removed successfully');
 			          $('#Modalok').modal('show');
 			          var obj = document.createElement("audio");
-						  obj.src = "/moodle/Sound/success.mp3";
+						  obj.src = "/Sound/success.mp3";
 						  obj.volume = 0.1;
 						  obj.autoPlay = false;
 						  obj.preLoad = true;
@@ -725,7 +725,7 @@
 			          $('.debug-url').html('File was removed successfully');
 			          $('#Modalok').modal('show');
 			          var obj = document.createElement("audio");
-						  obj.src = "/moodle/Sound/success.mp3";
+						  obj.src = "/Sound/success.mp3";
 						  obj.volume = 0.1;
 						  obj.autoPlay = false;
 						  obj.preLoad = true;
@@ -775,7 +775,7 @@
 			            $('.debug-url').html('File(s) not saved. Try Again');
 			            $('#Modalko').modal('show');
 			            var obj = document.createElement("audio");
-						  obj.src = "/moodle/Sound/success.mp3";
+						  obj.src = "/Sound/success.mp3";
 						  obj.volume = 0.1;
 						  obj.autoPlay = false;
 						  obj.preLoad = true;
@@ -788,7 +788,7 @@
 			            $('.debug-url').html('Files updated Sucessfully');
 					    $('#Modalok').modal('show');
 					    var obj = document.createElement("audio");
-						  obj.src = "/moodle/Sound/success.mp3";
+						  obj.src = "/Sound/success.mp3";
 						  obj.volume = 0.1;
 						  obj.autoPlay = false;
 						  obj.preLoad = true;
@@ -803,7 +803,7 @@
 				        $('.debug-url').html('File was not actualize/created successfully');
 				        $('#Modalko').modal('show');
 				        var obj = document.createElement("audio");
-						  obj.src = "/moodle/Sound/error.mp3";
+						  obj.src = "/Sound/error.mp3";
 						  obj.volume = 0.1;
 						  obj.autoPlay = false;
 						  obj.preLoad = true;
@@ -817,7 +817,7 @@
 					    $('#Modalok').modal('show');
 					    $('body').append('<embed src="Sound/success.mp3" autostart="true" hidden="true">');
 					    var obj = document.createElement("audio");
-						  obj.src = "/moodle/Sound/error.mp3";
+						  obj.src = "/Sound/error.mp3";
 						  obj.volume = 0.1;
 						  obj.autoPlay = false;
 						  obj.preLoad = true;
@@ -830,7 +830,7 @@
 			            $('.debug-url').html('File was not actualize/created successfully. Please verify wifi connection');
       					$('#Modalko').modal('show');
       					var obj = document.createElement("audio");
-						  obj.src = "/moodle/Sound/error.mp3";
+						  obj.src = "/Sound/error.mp3";
 						  obj.volume = 0.1;
 						  obj.autoPlay = false;
 						  obj.preLoad = true;
@@ -866,7 +866,7 @@
 				     $('.debug-url').html('Cannot exists private files');
 				     $('#Modalko').modal('show');
 				    			  var obj2 = document.createElement("audio");
-								  obj2.src = "/moodle/Sound/error.mp3";
+								  obj2.src = "/Sound/error.mp3";
 								  obj2.volume = 0.1;
 								  obj2.autoPlay = false;
 								  obj2.preLoad = true;
@@ -885,7 +885,7 @@
 						     $('.debug-url').html('Cannot exists private files');
 						     $('#Modalko').modal('show');
 						     	  var obj2 = document.createElement("audio");
-								  obj2.src = "/moodle/Sound/error.mp3";
+								  obj2.src = "/Sound/error.mp3";
 								  obj2.volume = 0.1;
 								  obj2.autoPlay = false;
 								  obj2.preLoad = true;
