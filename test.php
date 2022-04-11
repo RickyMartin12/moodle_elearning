@@ -176,7 +176,7 @@ $mail->isSMTP();
   2 = Mensagens ao Cliente e Servidor
 */
 
-$mail->SMTPDebug = 0;
+$mail->SMTPDebug = 2;
 
 /*
   Definir o nome do servidor de e-mail
