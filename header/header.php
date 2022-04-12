@@ -127,11 +127,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<li class="dropdown">
 		              <a href="#" class="dropdown-toggle dropdown-at" data-toggle="dropdown"><span class=" name-caret"><font id="logged_username_name"><?php echo $_COOKIE["username"] ?></font><i class="caret"></i></span><img src="https://moodle-elearrning.herokuapp.com/images/users/<?php echo $_COOKIE['logotipo'] ?>" id="logged_username_img"></a>
 		              <ul class="dropdown-menu" id="menu_drop" role="menu">
-		                <li class="info_dashobaord"><a href="dashboard.php"><i class="fas fa-tachometer-alt"></i>Dashboard</a></li>
-		                <li><a href="profile.php"><i class="fa fa-user"></i>Edit Profile</a></li>
-		                <li><a href="grades.php"><i class="fa fa-th"></i>Grades</a></li>
-		                <li><a href="definitions.php"><i class="fa fa-cog"></i>Definitions</a></li>
-		                <li class="logout"><a href="logout.php"><i class="fas fa-sign-out-alt"></i>Logout</a></li>
+		                <li class="info_dashobaord"><a href="https://moodle-elearrning.herokuapp.com/dashboard.php"><i class="fas fa-tachometer-alt"></i>Dashboard</a></li>
+		                <li><a href="https://moodle-elearrning.herokuapp.com/profile.php"><i class="fa fa-user"></i>Edit Profile</a></li>
+		                <li><a href="https://moodle-elearrning.herokuapp.com/grades.php"><i class="fa fa-th"></i>Grades</a></li>
+		                <li><a href="https://moodle-elearrning.herokuapp.com/definitions.php"><i class="fa fa-cog"></i>Definitions</a></li>
+		                <li class="logout"><a href="https://moodle-elearrning.herokuapp.com/logout.php"><i class="fas fa-sign-out-alt"></i>Logout</a></li>
 		              </ul>
 		            </li>
 		           
