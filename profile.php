@@ -2,7 +2,7 @@
         <div id="page-wrapper" class="gray-bg dashbard-1">
        		<div class="content-main">
  	
-			    <div class="banner">aa
+			    <div class="banner">
 			   
 					<h2>
 					<a href="index.php">Home</a>
