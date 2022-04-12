@@ -10,7 +10,7 @@
 <meta name="keywords" content="Moodle Concpted Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+<link href="https://moodle-elearrning.herokuapp.com/css/bootstrap.min.css" rel='stylesheet' type='text/css' />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://moodle-elearrning.herokuapp.com/css/bootstrap-switch.min.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -46,7 +46,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 border-color: #269abc!important;
             }
         </style>
-<script src="js/skycons.js"></script>
+<script src="https://moodle-elearrning.herokuapp.com/js/skycons.js"></script>
 <!--//skycons-icons-->
 </head>
 <body>
@@ -91,7 +91,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-               <h1> <a class="navbar-brand" href="index.php"><img src="images/cs.png" class="img-responsive" title="Welcome to Concept Software Systems eLearning"></a></h1>         
+               <h1> <a class="navbar-brand" href="index.php"><img src="https://moodle-elearrning.herokuapp.com/images/cs.png" class="img-responsive" title="Welcome to Concept Software Systems eLearning"></a></h1>         
 			   </div>
 			 <div class=" border-bottom">
         	<div class="full-left">
@@ -125,7 +125,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 		    		
 					<li class="dropdown">
-		              <a href="#" class="dropdown-toggle dropdown-at" data-toggle="dropdown"><span class=" name-caret"><font id="logged_username_name"><?php echo $_COOKIE["username"] ?></font><i class="caret"></i></span><img src="images/users/<?php echo $_COOKIE['logotipo'] ?>" id="logged_username_img"></a>
+		              <a href="#" class="dropdown-toggle dropdown-at" data-toggle="dropdown"><span class=" name-caret"><font id="logged_username_name"><?php echo $_COOKIE["username"] ?></font><i class="caret"></i></span><img src="https://moodle-elearrning.herokuapp.com/images/users/<?php echo $_COOKIE['logotipo'] ?>" id="logged_username_img"></a>
 		              <ul class="dropdown-menu" id="menu_drop" role="menu">
 		                <li class="info_dashobaord"><a href="dashboard.php"><i class="fas fa-tachometer-alt"></i>Dashboard</a></li>
 		                <li><a href="profile.php"><i class="fa fa-user"></i>Edit Profile</a></li>
@@ -429,7 +429,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <p style='text-align:center; margin:0;'><img src="images/cs.png" class="logo-nav" style="width:68px;"></p>
+                        <p style='text-align:center; margin:0;'><img src="https://moodle-elearrning.herokuapp.com/images/cs.png" class="logo-nav" style="width:68px;"></p>
                         <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times-circle" aria-hidden="true"> </i><font class="hidden-xs"> Cancel</font></button>
                         <button title="Guardar as alterações do blogue" type="button" class="btn btn-info" onclick="saveQuest();"> <span class="glyphicon glyphicon-send"></span><font class="hidden-xs"> Send Questionnaire</font></button>
                     </div>
