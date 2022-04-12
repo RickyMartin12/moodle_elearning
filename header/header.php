@@ -159,7 +159,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <a href="#" class=" hvr-bounce-to-right"><i class="fa fa-home nav_icon"></i> <span class="nav-label">Home</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <?php if ($_COOKIE['home_dashboard'] == 'checked') { ?>
-                                <li><a href="dashboard.php" class=" hvr-bounce-to-right"> <i class="fas fa-tachometer-alt nav_icon"></i>Dashboard</a></li>
+                                <li><a href="https://moodle-elearrning.herokuapp.com/dashboard.php" class=" hvr-bounce-to-right"> <i class="fas fa-tachometer-alt nav_icon"></i>Dashboard</a></li>
                             <?php } ?>
 
                             <?php if ($_COOKIE['home_site_pages'] == 'checked') { ?>
@@ -170,20 +170,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
                                 <?php if ($_COOKIE['home_site_pages_site_blogs'] == 'checked') { ?>
-	                            	<li><a href="site-blogs.php" class=" hvr-bounce-to-right"><i class="fab fa-blogger nav_icon"></i>Site Blogs</a></li>
+	                            	<li><a href="https://moodle-elearrning.herokuapp.com/site-blogs.php" class=" hvr-bounce-to-right"><i class="fab fa-blogger nav_icon"></i>Site Blogs</a></li>
                                 <?php } ?>
 
 
                                 <?php if ($_COOKIE['home_site_pages_site_badges'] == 'checked') { ?>
-	                            	<li><a href="site-badges.php" class=" hvr-bounce-to-right"><i class="fas fa-id-badge nav_icon"></i>Site Badges</a></li>
+	                            	<li><a href="https://moodle-elearrning.herokuapp.com/site-badges.php" class=" hvr-bounce-to-right"><i class="fas fa-id-badge nav_icon"></i>Site Badges</a></li>
                                 <?php } ?>
 
                                 <?php if ($_COOKIE['home_site_pages_calendar'] == 'checked') { ?>
-	                            	<li><a href="calendar.php" class=" hvr-bounce-to-right"><i class="fa fa-calendar nav_icon"></i>Calendar</a></li>
+	                            	<li><a href="https://moodle-elearrning.herokuapp.com/calendar.php" class=" hvr-bounce-to-right"><i class="fa fa-calendar nav_icon"></i>Calendar</a></li>
                                 <?php } ?>
 
                                 <?php if ($_COOKIE['home_site_pages_site_news'] == 'checked') { ?>
-	                            	<li><a href="site-news.php" class=" hvr-bounce-to-right"><i class="far fa-newspaper nav_icon"></i>Site News</a></li>
+	                            	<li><a href="https://moodle-elearrning.herokuapp.com/site-news.php" class=" hvr-bounce-to-right"><i class="far fa-newspaper nav_icon"></i>Site News</a></li>
                                 <?php } ?>
 
 
@@ -303,11 +303,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</ul>
                     </li>-->
 
-                    <li><a href="categoria/ver-categories.php" class=" hvr-bounce-to-right"> <i class="fa fa-list-alt nav_icon"></i>Ver Categories</a></li>
+                    <li><a href="https://moodle-elearrning.herokuapp.com/categoria/ver-categories.php" class=" hvr-bounce-to-right"> <i class="fa fa-list-alt nav_icon"></i>Ver Categories</a></li>
 
-                    <li><a href="grades/view-grades.php" class=" hvr-bounce-to-right"> <i class="fa fa-th nav_icon"></i>Ver Grades</a></li>
+                    <li><a href="https://moodle-elearrning.herokuapp.com/grades/view-grades.php" class=" hvr-bounce-to-right"> <i class="fa fa-th nav_icon"></i>Ver Grades</a></li>
 
-                     <li><a href="chat/index.php" class=" hvr-bounce-to-right"> <i class="fas fa-sms nav_icon"></i>Chat</a></li>
+                     <li><a href="https://moodle-elearrning.herokuapp.com/chat/index.php" class=" hvr-bounce-to-right"> <i class="fas fa-sms nav_icon"></i>Chat</a></li>
 
 
                 </ul>
@@ -317,22 +317,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <li>
                     	<a href="#" class=" hvr-bounce-to-right"><i class="fas fa-user nav_icon"></i> <span class="nav-label">Administrator</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                        	<li><a href="admin/notifications.php" class=" hvr-bounce-to-right"><i class="fas fa-bell nav_icon"></i>Notifications</a></li>
-                        	<li><a href="admin/register-user.php" class=" hvr-bounce-to-right"><i class="fa fa-user nav_icon"></i>Registry User</a></li>
-                        	<li><a href="admin/adv-features.php" class=" hvr-bounce-to-right"><i class="fas fa-shield-alt nav_icon"></i>Advanced Features</a></li>
-                            <li><a href="admin/lists_users.php" class=" hvr-bounce-to-right"><i class="fas fa-users nav_icon"></i>Users Lists</a></li>
+                        	<li><a href="https://moodle-elearrning.herokuapp.com/admin/notifications.php" class=" hvr-bounce-to-right"><i class="fas fa-bell nav_icon"></i>Notifications</a></li>
+                        	<li><a href="https://moodle-elearrning.herokuapp.com/admin/register-user.php" class=" hvr-bounce-to-right"><i class="fa fa-user nav_icon"></i>Registry User</a></li>
+                        	<li><a href="https://moodle-elearrning.herokuapp.com/admin/adv-features.php" class=" hvr-bounce-to-right"><i class="fas fa-shield-alt nav_icon"></i>Advanced Features</a></li>
+                            <li><a href="https://moodle-elearrning.herokuapp.com/admin/lists_users.php" class=" hvr-bounce-to-right"><i class="fas fa-users nav_icon"></i>Users Lists</a></li>
 
 
-                            <li><a href="user-security.html" class="hvr-bounce-to-right"><i class="fas fa-graduation-cap nav_icon"></i><span class="nav-label">Courses / Categories</span><span class="fa arrow"></span></a>
+                            <li><a href="#" class="hvr-bounce-to-right"><i class="fas fa-graduation-cap nav_icon"></i><span class="nav-label">Courses / Categories</span><span class="fa arrow"></span></a>
 
                                     <ul class="nav nav-second-level">
                                   
-                                        <li><a href="cursos/content-cursos.php" class=" hvr-bounce-to-right"><i class="fas fa-tag nav_icon"></i>List Courses </a></li>
+                                        <li><a href="https://moodle-elearrning.herokuapp.com/cursos/content-cursos.php" class=" hvr-bounce-to-right"><i class="fas fa-tag nav_icon"></i>List Courses </a></li>
 
-                                        <li><a href="categoria/content-categoria-cursos.php" class=" hvr-bounce-to-right"><i class="fas fa-tags nav_icon"></i>List Categories </a></li>
+                                        <li><a href="https://moodle-elearrning.herokuapp.com/categoria/content-categoria-cursos.php" class=" hvr-bounce-to-right"><i class="fas fa-tags nav_icon"></i>List Categories </a></li>
 
 
-                                        <li><a href="categoria/edit-content-categoria-cursos.php" class=" hvr-bounce-to-right"><i class="fas fa-edit nav_icon"></i>Edit Categories </a></li>
+                                        <li><a href="https://moodle-elearrning.herokuapp.com/categoria/edit-content-categoria-cursos.php" class=" hvr-bounce-to-right"><i class="fas fa-edit nav_icon"></i>Edit Categories </a></li>
                                         
                                     </ul>
                                 </li>
@@ -343,7 +343,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                     <ul class="nav nav-second-level">
 
 
-                                        <li><a href="grades/edit-grades.php" class=" hvr-bounce-to-right"><i class="fas fa-edit nav_icon"></i>Edit Grades </a></li>
+                                        <li><a href="https://moodle-elearrning.herokuapp.com/grades/edit-grades.php" class=" hvr-bounce-to-right"><i class="fas fa-edit nav_icon"></i>Edit Grades </a></li>
                                         
                                     </ul>
                                 </li>
