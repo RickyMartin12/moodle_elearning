@@ -1,7 +1,9 @@
 <?php
+require_once $_SERVER['DOCUMENT_ROOT'] . '/moodle/vendor/autoload.php';
 
-
-include $_SERVER['DOCUMENT_ROOT'] . '/moodle/mpdf/mpdf.php';
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
 
 $img1 = $_SERVER['DOCUMENT_ROOT'].'/moodle/images/cs.png';
 $img_ques = $_SERVER['DOCUMENT_ROOT'].'/moodle/images/questionnaire.png';
@@ -171,63 +173,100 @@ Conceptek a Shiji Group Brand
 
 if ($error_message == '')
 {
+	$mpdf = new \Mpdf\Mpdf();
+    $mpdf->WriteHTML($html);
+	
+	$filename = "Questionnaire - ".$_COOKIE['username']." .pdf";
 
 
+    $attachment = $mpdf->Output($filename, 'S');
+        
 
-
-
-
-	$mpdf=new mPDF();
-	$mpdf->WriteHTML($html);
-	$pdfdoc = $mpdf->Output("", "S");
-    $attachment = chunk_split(base64_encode($pdfdoc));
-
-    $separator = md5(time());
-    $eol = PHP_EOL;
-
-    $attachment = chunk_split(base64_encode($pdfdoc));
-    $filename = utf8_decode("Questionnaire - ".$_COOKIE['username']." .pdf");
-
-    $to = "r.peleira@hotmail.com";
-    $email = $_COOKIE['email'];
-    $nome = $_COOKIE['username'];
-
-    $subject = utf8_decode('Questionnaire - '.$nome);
-
-        $headers  = "From: ".$email.$eol;
-        $headers .= "MIME-Version: 1.0".$eol; 
-        $headers .= "Content-Type: multipart/mixed; boundary=\"".$separator."\"". $eol . $eol;
+	$nome = $_COOKIE['username'];
+	$email = $_COOKIE['email'];
 
         $info_client =
         "<div style='width:95%; margin-left:2.5%;'>
         <h4>Was sent pdf with informations about the questionnaire user $nome with email $email</h4>
         </div>";
+		
+		
+		// Criando uma nova instâcia
+		$mail = new PHPMailer(true);
+		
+		$mail->CharSet = 'UTF-8';
 
-        $info_c = utf8_decode("Howdy $email, the details was sent successfully");
+		// Informando para usar SMTP
+		$mail->isSMTP();
 
-        $body_c = '';
-        $body_c .= "Content-Transfer-Encoding: 7bit" . $eol;
-    	$body_c .= "This is a MIME encoded message." . $eol; //had one more .$eol
+		/*
+		  Habilitando debug SMTP
+		  0 = off (uso em produção)
+		  1 = Mensagens ao Cliente
+		  2 = Mensagens ao Cliente e Servidor
+		*/
 
-        $body_c .= "--".$separator.$eol;
-        $body_c .= "Content-Type: text/html; charset=\"iso-8859-1\"".$eol;
-        $body_c .= "Content-Transfer-Encoding: 8bit".$eol.$eol;
-        $body_c .= $info_c.$eol;
+		$mail->SMTPDebug = 0;
 
-        $body_c .= "--".$separator.$eol;
-        $body_c .= "Content-Type: application/octet-stream; name=\"".$filename."\"".$eol; 
-        $body_c .= "Content-Transfer-Encoding: base64".$eol;
-        $body_c .= "Content-Disposition: attachment".$eol.$eol;
-        $body_c .= $attachment.$eol;
-        $body_c .= "--".$separator."--";
+		/*
+		  Definir o nome do servidor de e-mail
+		  use $mail ->HOST = gethostbyname('email.gmail.com');
+		  se sua rede não suportar SMTP over Ipv6
+		*/
 
-        if (mail($to, $subject, $body_c, $headers)) {
+		$mail->Host = 'smtp.gmail.com';
 
-	        $msgsuccess = 'Mail Send Successfully';
-	    } else {
+		/*
+		  Defina o numero da porta SMTP - 587 para autenticação TLS,
+		  a.k.a. RFC4409 SMTP submission
+		*/
 
-	        $msgerror = 'Main not send';
-	    }
+		$mail->Port = 587;
+
+		// Define o sistema de criptografia a usar- ssl (depreciado) ou tals
+		$mail->SMTPSecure = 'tls';
+
+		// Se vai usar SMTP authentication
+		$mail->SMTPAuth = true;
+
+		// Usuário para usar SMTP authentication
+		// Use o endereço completodo e-mail do Gmail
+		$mail->Username = 'postmaster@sandbox745525d796ad4c9e8d083fb05b54e395.mailgun.org';
+
+        // Senha para SMTP authentication
+        $mail->Password = 'c05f67d8791a2784e0d05fcbaebadc85-7005f37e-6e694194';
+
+        // Definir o remetente
+        $mail->setFrom('postmaster@sandbox745525d796ad4c9e8d083fb05b54e395.mailgun.org', 'Curso');
+
+        // Definir o endereço para respostas
+        $mail->addReplyTo('postmaster@sandbox745525d796ad4c9e8d083fb05b54e395.mailgun.org', 'Curso');
+
+		// Definir destinatario
+		$mail->addAddress($email, 'Destinatário');
+
+		// Definir o Assunto
+		$mail->Subject = 'Boas Jovem, os detalhes foram enviados com sucesso';
+
+		// Definir formato de mensagem HTML
+		$mail->isHTML(true);
+
+		// Corpo da Mensagem
+		$mail->Body = $info_client;
+        $mail->AltBody = "Conceptek Questionnaire";
+		
+		
+		$mail->addStringAttachment($attachment, $filename, 'base64', 'application/pdf');
+		
+		
+		//$mail->send();
+		
+		// Envia a mensagem e verifica os erros
+		if (!$mail->send()) {
+		  $msgerror = 'Main not send'; 
+		} else {
+		  $msgsuccess = 'Mail Send Successfully';
+		}
 
 }
 
