@@ -1,7 +1,7 @@
 <?php
 
 
-require $_SERVER['DOCUMENT_ROOT']. "/moodle/connect.php";
+require $_SERVER['DOCUMENT_ROOT']. "/connect.php";
 
 
 
