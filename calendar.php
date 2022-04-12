@@ -268,7 +268,7 @@
       success:function(){
        calendar.fullCalendar('refetchEvents');
        var obj1 = document.createElement("audio");
-              obj1.src = "/moodle/Sound/success.mp3";
+              obj1.src = "/Sound/success.mp3";
               obj1.volume = 0.1;
               obj1.autoPlay = false;
               obj1.preLoad = true;
@@ -293,7 +293,7 @@
       success:function()
       {
         var obj1 = document.createElement("audio");
-              obj1.src = "/moodle/Sound/success.mp3";
+              obj1.src = "/Sound/success.mp3";
               obj1.volume = 0.1;
               obj1.autoPlay = false;
               obj1.preLoad = true;
@@ -342,7 +342,7 @@
       success:function(){
        calendar.fullCalendar('refetchEvents');
        var obj1 = document.createElement("audio");
-              obj1.src = "/moodle/Sound/success.mp3";
+              obj1.src = "/Sound/success.mp3";
               obj1.volume = 0.1;
               obj1.autoPlay = false;
               obj1.preLoad = true;
@@ -449,7 +449,7 @@
        {
         calendar.fullCalendar('refetchEvents');
         var obj1 = document.createElement("audio");
-              obj1.src = "/moodle/Sound/success.mp3";
+              obj1.src = "/Sound/success.mp3";
               obj1.volume = 0.1;
               obj1.autoPlay = false;
               obj1.preLoad = true;
@@ -493,7 +493,7 @@
        {
         calendar.fullCalendar('refetchEvents');
         var obj1 = document.createElement("audio");
-              obj1.src = "/moodle/Sound/success.mp3";
+              obj1.src = "/Sound/success.mp3";
               obj1.volume = 0.1;
               obj1.autoPlay = false;
               obj1.preLoad = true;
