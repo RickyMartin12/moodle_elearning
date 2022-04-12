@@ -182,7 +182,7 @@
 
 			        </div>
 			        <div class="modal-footer">
-			        	<p style='text-align:center; margin:0;'><img src="/moodle/images/cs.png" class="logo-nav" style="width:68px;"></p>
+			        	<p style='text-align:center; margin:0;'><img src="/images/cs.png" class="logo-nav" style="width:68px;"></p>
 				        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times-circle" aria-hidden="true"> </i><font class="hidden-xs"> Cancel</font></button>
 	                    <button title="Guardar as alterações do blogue" type="button" class="btn btn-success" onclick="saveCategory($('#id_cat').html());"> <span class="glyphicon glyphicon-save-file"></span><font class="hidden-xs"> Save</font></button>
 			        </div>
@@ -336,7 +336,7 @@ function getCourses(cursos)
 
   setTimeout(function(){ 
   dataValue='action=4';
-    $.ajax({ url:'/moodle/cursos/action/action_cursos.php',
+    $.ajax({ url:'/cursos/action/action_cursos.php',
     data:dataValue,
     type:'POST', 
     cache:false,
@@ -386,7 +386,7 @@ function getSubCourse(nome_curso, sub_cursos)
 
   setTimeout(function(){ 
   dataValue='action=7&nome_curso='+escape(nome_curso);
-    $.ajax({ url:'/moodle/cursos/action/action_cursos.php',
+    $.ajax({ url:'/cursos/action/action_cursos.php',
     data:dataValue,
     type:'POST', 
     cache:false,
@@ -429,7 +429,7 @@ function getCoursesbyID(nome_curso, sub_nome_curso)
 {
   setTimeout(function(){
   dataValue='action=8&nome_curso='+escape(nome_curso)+'&sub_nome_curso='+escape(sub_nome_curso);
-    $.ajax({ url:'/moodle/cursos/action/action_cursos.php',
+    $.ajax({ url:'/cursos/action/action_cursos.php',
     data:dataValue,
     type:'POST', 
     cache:false,

@@ -6,7 +6,7 @@
 			    <div class="banner">
 			   
 					<h2>
-					<a href="/moodle/index.php">Home</a>
+					<a href="/index.php">Home</a>
 					<i class="fa fa-angle-right"></i>
 					<span>Visualize Categories</span>
 					</h2>
@@ -68,7 +68,7 @@
               </div>
               <div class="modal-footer">
                 <p style="text-align:center; margin:0;">
-                  <img src="/moodle/images/cs.png" class="logo-nav" style="width:68px;">
+                  <img src="/images/cs.png" class="logo-nav" style="width:68px;">
                 </p>
                 <button type="button" class="btn btn-default" data-dismiss="modal">
                   <i class="fa fa-times-circle" aria-hidden="true"> </i><font class="hidden-xs"> Cancel</font>
