@@ -1,5 +1,6 @@
 <?php
 	$header = $_SERVER['DOCUMENT_ROOT']. "/header/header.php";
+	$footer = $_SERVER['DOCUMENT_ROOT']. "/footer/footer.php";
 ?>
 
 <?php include $header; ?>
@@ -218,7 +219,7 @@
 			    </div>
 			  </div>
 
-<?php include '../footer/footer.php'; ?>
+<?php include $footer; ?>
 
 <script type="text/javascript">
 
