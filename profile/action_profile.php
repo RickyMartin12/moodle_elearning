@@ -1,6 +1,6 @@
 <?php
 
-require $_SERVER['DOCUMENT_ROOT']. "/moodle/connect.php";
+require $_SERVER['DOCUMENT_ROOT']. "/connect.php";
 
 
 switch ($_POST['action']){
@@ -98,7 +98,7 @@ switch ($_POST['action']){
       $sql ="UPDATE admins SET pass=MD5('".$pass."') WHERE id='$id'";
 
 
-      $file = $_SERVER['DOCUMENT_ROOT']. '/moodle/request/passlist/big_pass_list.txt';
+      $file = $_SERVER['DOCUMENT_ROOT']. '/request/passlist/big_pass_list.txt';
         // Open the file to get existing content
         $current = file_get_contents($file);
         // Append a new person to the file
