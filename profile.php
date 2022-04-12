@@ -178,7 +178,7 @@
 						<a data-toggle="modal" onclick="$('#info_login_session').modal('show');" class="btn btn-info"><i class="fas fa-sign-in-alt"></i> Browser sessions</a>
 						<br>
 						<br>
-						<a href="/moodle/grades.php" class="btn btn-info"><i class="fa fa-th"></i> Grades overview</a>
+						<a href="/grades.php" class="btn btn-info"><i class="fa fa-th"></i> Grades overview</a>
 					</p>
 				</div>
 			</div>
@@ -213,7 +213,7 @@
 					<div class="col-md-12">
 						<div class="panel panel-primary" Id="panel_col">
       						<div class="panel-heading" id="col" >
-      							<i class="fas fa-spa"></i> <a href="/moodle/spa/spa-geral.php" style="color: white;">SPA & Leisure</a> <font style="float:right;"><i id="line_minus" class="fas fa-plus"></i></font>
+      							<i class="fas fa-spa"></i> <a href="/spa/spa-geral.php" style="color: white;">SPA & Leisure</a> <font style="float:right;"><i id="line_minus" class="fas fa-plus"></i></font>
       						</div>
       						<div class="panel-body" id="spa_cot">
       							<p><strong>SPA & Leisure - Level 1:</strong> This Module is divided into five key sections, covering the Settings category of the SPA & LEISURE application. Each of these sections have videos that explain the software functionality available.</p>
@@ -226,7 +226,7 @@
     					<br>
     					<div class="panel panel-primary" id="panel_col">
       						<div class="panel-heading" id="col" >
-      							<i class="fa fa-credit-card"></i> <a href="/moodle/pos/pos-geral.php" style="color: white;">Point of Sale Solutions</a> <font style="float:right;"><i id="line_minus_pos" class="fas fa-plus"></i></font>
+      							<i class="fa fa-credit-card"></i> <a href="/pos/pos-geral.php" style="color: white;">Point of Sale Solutions</a> <font style="float:right;"><i id="line_minus_pos" class="fas fa-plus"></i></font>
       						</div>
       						<div class="panel-body" id="pos_cot">
       							<p>This Module is divided into four key sections, covering categories of the application. Each of these sections have videos that explain the software functionality available.</p>
@@ -239,7 +239,7 @@
     					<br>
     					<div class="panel panel-primary" id="panel_col">
       						<div class="panel-heading" id="col" >
-      							<i class="fab fa-markdown"></i> <a href="/moodle/mem/mem-geral.php" style="color: white;">Member Marketing</a> <font style="float:right;"><i id="line_minus_mem" class="fas fa-plus"></i></font>
+      							<i class="fab fa-markdown"></i> <a href="/mem/mem-geral.php" style="color: white;">Member Marketing</a> <font style="float:right;"><i id="line_minus_mem" class="fas fa-plus"></i></font>
       						</div>
       						<div class="panel-body" id="mem_cot">
       							<p>This Module is divided into four key sections, covering specific categories of the application. Each of these sections have videos that explain the software functionality available.</p>
@@ -248,7 +248,7 @@
     					<br>
     					<div class="panel panel-primary" id="panel_col">
       						<div class="panel-heading" id="col" >
-      							<i class="fas fa-warehouse"></i> <a href="/moodle/inv/inv-geral.php" style="color: white;">Inventory</a> <font style="float:right;"><i id="line_minus_inv" class="fas fa-plus"></i></font>
+      							<i class="fas fa-warehouse"></i> <a href="/inv/inv-geral.php" style="color: white;">Inventory</a> <font style="float:right;"><i id="line_minus_inv" class="fas fa-plus"></i></font>
       						</div>
       						<div class="panel-body" id="inv_cot">
       							<p>This Module is divided into three key sections, covering categories of the application. Each of these sections have videos that explain the software functionality available.</p>
@@ -257,7 +257,7 @@
     					<br>
     					<div class="panel panel-primary" id="panel_col">
       						<div class="panel-heading" id="col" >
-      							<i class="fas fa-golf-ball"></i> <a href="/moodle/golf/golf-geral.php" style="color: white;">Golf Management</a> <font style="float:right;"><i id="line_minus_golf" class="fas fa-plus"></i></font>
+      							<i class="fas fa-golf-ball"></i> <a href="/golf/golf-geral.php" style="color: white;">Golf Management</a> <font style="float:right;"><i id="line_minus_golf" class="fas fa-plus"></i></font>
       						</div>
       						<div class="panel-body" id="golf_cot">
       							<p>This Module is divided into three key sections, covering the Profile, the Tee-Sheet and the Single Reservations categories of the GOLF application. Each of these sections have videos that explain the software functionality available.</p>
@@ -268,7 +268,7 @@
     					<br>
     					<div class="panel panel-primary" id="panel_col">
       						<div class="panel-heading" id="col" >
-      							<i class="fas fa-lock"></i> <a href="/moodle/user-security/user-security-geral.php" style="color: white;">User Security</a> <font style="float:right;"><i id="line_minus_user_security" class="fas fa-plus"></i></font>
+      							<i class="fas fa-lock"></i> <a href="/user-security/user-security-geral.php" style="color: white;">User Security</a> <font style="float:right;"><i id="line_minus_user_security" class="fas fa-plus"></i></font>
       						</div>
       						<div class="panel-body" id="user_security_cot">
       							<p>On completion of this module you will be able to:<br><i class="fas fa-caret-right"></i> Create new Users &amp; Roles.<br><i class="fas fa-caret-right"></i> How to create a Password by user.<br><i class="fas fa-caret-right"></i> Define a security policy for passwords.<br><i class="fas fa-caret-right"></i> Create filters per user or roles.<br><i class="fas fa-caret-right"></i> Use Audit.<br><i class="fas fa-caret-right"></i> Use Print Report.<br><i class="fas fa-caret-right"></i> Use Components and Global Filters.<br><i class="fas fa-caret-right"></i> Next &amp; Previous</p>
@@ -303,7 +303,7 @@
 					
 					<p>
 						<br>
-						<a href="/moodle/site-blogs.php" class="btn btn-info"><i class="fas fa-blog"></i>&nbsp;&nbsp;Blog entries</a>
+						<a href="/site-blogs.php" class="btn btn-info"><i class="fas fa-blog"></i>&nbsp;&nbsp;Blog entries</a>
 						
 						
 						
