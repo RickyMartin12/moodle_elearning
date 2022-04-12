@@ -1,4 +1,8 @@
-<?php include '../header/header.php'; ?>
+<?php
+	$header = $_SERVER['DOCUMENT_ROOT']. "/header/header.php";
+?>
+
+<?php include $header; ?>
 
 
         <div id="page-wrapper" class="gray-bg dashbard-1">
