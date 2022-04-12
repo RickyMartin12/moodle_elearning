@@ -1,14 +1,14 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . '/moodle/vendor/autoload.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
-$img1 = $_SERVER['DOCUMENT_ROOT'].'/moodle/images/cs.png';
-$img_ques = $_SERVER['DOCUMENT_ROOT'].'/moodle/images/questionnaire.png';
-$img_res = $_SERVER['DOCUMENT_ROOT'].'/moodle/images/question.png';
-$img_right = $_SERVER['DOCUMENT_ROOT'].'/moodle/images/play-arrow.png';
+$img1 = $_SERVER['DOCUMENT_ROOT'].'/images/cs.png';
+$img_ques = $_SERVER['DOCUMENT_ROOT'].'/images/questionnaire.png';
+$img_res = $_SERVER['DOCUMENT_ROOT'].'/images/question.png';
+$img_right = $_SERVER['DOCUMENT_ROOT'].'/images/play-arrow.png';
 
 $per_1 = $_POST['per_1'];
 $obs_per_1 = $_POST['obs_per_1'];
