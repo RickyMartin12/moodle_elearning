@@ -15,10 +15,7 @@ $obter_comp=" SELECT nome FROM admins ORDER BY nome ASC";
 
           $nome_utilizador = "Ricardo Peleira";
 
-
-          //$r_p_string = array_search_partial($v, $nome_utilizador);
-
-          foreach($array as $index => $string) {
+          foreach($v as $index => $string) {
             if (strpos($string, $nome_utilizador) !== false)
             {
               $r_p_string = true;
