@@ -21,7 +21,19 @@ function is_array_empty($arr){
   }
 }
 
-
+function array_search_partial($arr, $keyword) {
+  foreach($arr as $index => $string) {
+      if (strpos($string, $keyword) !== FALSE)
+      {
+        return true;
+      }
+      else
+      {
+        return false;
+      }
+          
+  }
+}
 
 
 
@@ -174,6 +186,11 @@ switch ($_POST['action']){
           $array = json_decode(json_encode($v), True);
 
           var_dump($array);
+
+
+          $r_p_string = array_search_partial($v, $nome_utilizador);
+
+          echo $r_p_string;
 
           /*$result_p_string = array_filter($v, function($value) {
             return strpos($value, $nome_utilizador) !== false;
