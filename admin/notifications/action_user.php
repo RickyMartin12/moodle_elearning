@@ -168,9 +168,24 @@ switch ($_POST['action']){
             $v[] = $obj;
           }
 
-          $array = json_decode(json_encode($v), True);
+          //$array = json_decode(json_encode($v), True);
 
-            $data_criacao = date("Y-m-d");
+          //echo is_array_empty($array);
+
+
+          if (in_array($nome_utilizador, $v))
+          {
+            $error = "O nome do utilizador encontra-se na base de dados. Deverá adicionar outro nome do utilizador";
+            $r = array('error' =>$error, 'success' =>'', 'nome' => '', 'email' => '');
+            echo json_encode($r);
+          }
+          else
+          {
+            $r = array('error' =>'', 'success' =>'sucesso', 'nome' => '', 'email' => '');
+            echo json_encode($r);
+          }
+
+            /*$data_criacao = date("Y-m-d");
 
             $hora_criacao = date('H:i');
 
@@ -187,7 +202,7 @@ switch ($_POST['action']){
               }
 
               $r=array('error'=>'','success' => $response,'id' => $last_id, 'nome' => $nome_utilizador);
-              echo json_encode($r);
+              echo json_encode($r);*/
 
 
 
