@@ -186,7 +186,7 @@ switch ($_POST['action']){
           }
           else
           {
-            $$data_criacao = date("Y-m-d");
+            $data_criacao = date("Y-m-d");
 
             $hora_criacao = date('H:i');
 
@@ -201,6 +201,93 @@ switch ($_POST['action']){
                 $response = 0;
                 $last_id = 0; 
               }
+
+              $email_subject = "Send Information User ".$nome_utilizador;
+
+              $email_body_client = '<div style="width:95%; margin-left:2.5%;">
+              <h4> User s Information: '.$nome_utilizador.'</h4>
+              <hr><b>Username: </b> '.$nome_utilizador.' <br /><br />
+              <b>Password: </b> '.$pass.' <br /><br/>
+              <hr>
+              <br>Thank you '.$nome_utilizador.', Elearning Conceptek a Shijin Group
+              <br>
+              <br>
+              <img src="https://moodle-elearrning.herokuapp.com/images/cs.png">
+              </div>';
+
+
+              // Criando uma nova inst�cia
+            $mail = new PHPMailer(true);
+
+
+            $mail->CharSet = 'UTF-8';
+
+            // Informando para usar SMTP
+            $mail->isSMTP();
+
+            /*
+              Habilitando debug SMTP
+              0 = off (uso em produ��o)
+              1 = Mensagens ao Cliente
+              2 = Mensagens ao Cliente e Servidor
+            */
+
+            $mail->SMTPDebug = 2;
+
+            /*
+              Definir o nome do servidor de e-mail
+              use $mail ->HOST = gethostbyname('email.gmail.com');
+              se sua rede n�o suportar SMTP over Ipv6
+            */
+
+            $mail->Host = 'smtp.mailgun.org';
+
+            /*
+              Defina o numero da porta SMTP - 587 para autentica��o TLS,
+              a.k.a. RFC4409 SMTP submission
+            */
+
+            $mail->Port = 587;
+
+            // Define o sistema de criptografia a usar- ssl (depreciado) ou tals
+            $mail->SMTPSecure = 'tls';
+
+            // Se vai usar SMTP authentication
+            $mail->SMTPAuth = true;
+
+            // Usu�rio para usar SMTP authentication
+            // Use o endere�o completodo e-mail do Gmail
+            $mail->Username = 'postmaster@sandbox2733effcb8554e5e8002e809d46561ef.mailgun.org';
+
+            // Senha para SMTP authentication
+            $mail->Password = 'c092e5bd7bc54e8912b5c6b47037ea80-162d1f80-21b7ddcb';
+
+            // Definir o remetente
+            $mail->setFrom('postmaster@sandbox2733effcb8554e5e8002e809d46561ef.mailgun.org', 'Curso');
+
+            // Definir o endereço para respostas
+            $mail->addReplyTo('postmaster@sandbox2733effcb8554e5e8002e809d46561ef.mailgun.org', 'Curso');
+
+            // Definir destinatario
+            $mail->addAddress("r.peleira@hotmail.com", 'Destinatário');
+
+            // Definir o Assunto
+            $mail->Subject = $email_subject;
+
+            // Definir formato de mensagem HTML
+            $mail->isHTML(true);
+
+            // Corpo da Mensagem
+            $mail->Body = $email_body_client;
+
+            // Corpo alternativo caso email n�o suporte html
+            $mail->AltBody = 'Mensangem simples';
+
+            $mail->send();
+
+
+
+
 
               $r=array('error'=>'','success' => $response,'id' => $last_id, 'nome' => $nome_utilizador);
               echo json_encode($r);
