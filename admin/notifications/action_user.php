@@ -166,7 +166,7 @@ switch ($_POST['action']){
         // Write the contents back to the file
         file_put_contents($file, $current);*/
     
-
+        $v= array();
 
         if (!$err) 
         {
