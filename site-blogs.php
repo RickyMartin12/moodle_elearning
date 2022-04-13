@@ -348,7 +348,7 @@
        		var s_username = '';
   setTimeout(function(){ 
   dataValue='action=2';
-    $.ajax({ url:'/moodle/blogs/action_blogs.php',
+    $.ajax({ url:'/blogs/action_blogs.php',
     data:dataValue,
     type:'POST', 
     cache:false,
@@ -367,7 +367,7 @@
              $('.back').fadeOut();
 
              var obj2 = document.createElement("audio");
-								  obj2.src = "/moodle/Sound/error.mp3";
+								  obj2.src = "/Sound/error.mp3";
 								  obj2.volume = 0.1;
 								  obj2.autoPlay = false;
 								  obj2.preLoad = true;
@@ -467,7 +467,7 @@
        		var s_username = '';
   setTimeout(function(){ 
   dataValue='action=5&blog_id='+id;
-    $.ajax({ url:'/moodle/blogs/action_blogs.php',
+    $.ajax({ url:'/blogs/action_blogs.php',
     data:dataValue,
     type:'POST', 
     cache:false,
@@ -480,7 +480,7 @@
             $("#Modalko").modal('show');
              $('.back').fadeOut();
              var obj2 = document.createElement("audio");
-								  obj2.src = "/moodle/Sound/error.mp3";
+								  obj2.src = "/Sound/error.mp3";
 								  obj2.volume = 0.1;
 								  obj2.autoPlay = false;
 								  obj2.preLoad = true;
@@ -691,7 +691,7 @@
                     }).done(function(msg) {
                         alert('File(s) was added successfully');
                         var obj = document.createElement("audio");
-						  obj.src = "/moodle/Sound/success.mp3";
+						  obj.src = "/Sound/success.mp3";
 						  obj.volume = 0.1;
 						  obj.autoPlay = false;
 						  obj.preLoad = true;
@@ -991,7 +991,7 @@
 		        if(response == 1){
 		          alert('File was removed successfully');
 		          var obj = document.createElement("audio");
-						  obj.src = "/moodle/Sound/success.mp3";
+						  obj.src = "/Sound/success.mp3";
 						  obj.volume = 0.1;
 						  obj.autoPlay = false;
 						  obj.preLoad = true;
@@ -1052,7 +1052,7 @@
 			          $('#Modalok').modal('show');
 			          $('html, body').animate({ scrollTop: 0 }, 500);
 			          var obj = document.createElement("audio");
-						  obj.src = "/moodle/Sound/success.mp3";
+						  obj.src = "/Sound/success.mp3";
 						  obj.volume = 0.1;
 						  obj.autoPlay = false;
 						  obj.preLoad = true;
@@ -1089,7 +1089,7 @@
 
 function remover_blog(id){
 			var obj2 = document.createElement("audio");
-								  obj2.src = "/moodle/Sound/error.mp3";
+								  obj2.src = "/Sound/error.mp3";
 								  obj2.volume = 0.1;
 								  obj2.autoPlay = false;
 								  obj2.preLoad = true;
@@ -1121,7 +1121,7 @@ function remover_blog(id){
 				          $('.debug-url').html('Blog number: #<strong>'+id+'</strong> was deleted successfully.');
 				          $("#Modalok").modal('show');
 				          var obj = document.createElement("audio");
-						  obj.src = "/moodle/Sound/success.mp3";
+						  obj.src = "/Sound/success.mp3";
 						  obj.volume = 0.1;
 						  obj.autoPlay = false;
 						  obj.preLoad = true;
@@ -1339,7 +1339,7 @@ function saveComment()
                             $(".load").show();
                         $('.debug-url').html('The commment create by username <?php echo $_COOKIE['username'] ?> was created successfully');
                         var obj = document.createElement("audio");
-						  obj.src = "/moodle/Sound/success.mp3";
+						  obj.src = "/Sound/success.mp3";
 						  obj.volume = 0.1;
 						  obj.autoPlay = false;
 						  obj.preLoad = true;
@@ -1373,7 +1373,7 @@ function saveComment()
 function remover_com(id_com)
 {
 	var obj2 = document.createElement("audio");
-								  obj2.src = "/moodle/Sound/error.mp3";
+								  obj2.src = "/Sound/error.mp3";
 								  obj2.volume = 0.1;
 								  obj2.autoPlay = false;
 								  obj2.preLoad = true;
@@ -1405,7 +1405,7 @@ function remover_com(id_com)
 				          $('.debug-url').html('Blog Comment #<strong>'+id+'</strong> was erase successfully');
 				          $("#Modalok").modal('show');
 				          var obj = document.createElement("audio");
-						  obj.src = "/moodle/Sound/success.mp3";
+						  obj.src = "/Sound/success.mp3";
 						  obj.volume = 0.1;
 						  obj.autoPlay = false;
 						  obj.preLoad = true;
@@ -1476,7 +1476,7 @@ function saveCom(id_com)
 			     if (data == 1) {
 			     	$('.debug-url').html('Blog Number Blog<strong class="cpt">'+id_com+'</strong> was updated sucessfully');
 			     	var obj = document.createElement("audio");
-						  obj.src = "/moodle/Sound/success.mp3";
+						  obj.src = "/Sound/success.mp3";
 						  obj.volume = 0.1;
 						  obj.autoPlay = false;
 						  obj.preLoad = true;
