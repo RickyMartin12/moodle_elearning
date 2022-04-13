@@ -1,6 +1,6 @@
 <?php
 
-    $path="cat/";//server path
+    $path="https://interhub.org/cat/";//server path
     foreach ($_FILES as $key) {
         if($key['error'] == UPLOAD_ERR_OK ){
             $name = $key['name'];

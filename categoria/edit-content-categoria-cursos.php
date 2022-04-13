@@ -485,7 +485,7 @@ function lister_files (id, files)
 							case 'jpg':
 							case 'png':
 							case 'gif':
-								s_files += "<font id='fil_blog'><i class='fa fa-image'></i> <a href='cat/"+elem[i]+"'><span>" + elem[i] + "</span></a> </font> ";
+								s_files += "<font id='fil_blog'><i class='fa fa-image'></i> <a href='https://interhub.org/cat/"+elem[i]+"'><span>" + elem[i] + "</span></a> </font> ";
 							break;                         
 							case 'mp4':
 							case 'mov':
@@ -495,10 +495,10 @@ function lister_files (id, files)
 							case 'webm':
 							case 'wmv':
 							case 'm4v':
-								s_files += "<font id='fil_blog'><i class='fas fa-film'></i> <a href='cat/"+elem[i]+"'><span>" + elem[i] + "</span></a></font> ";
+								s_files += "<font id='fil_blog'><i class='fas fa-film'></i> <a href='https://interhub.org/cat/"+elem[i]+"'><span>" + elem[i] + "</span></a></font> ";
 							break;
 							default:
-								s_files += "<font id='fil_blog'><i class='fas fa-file'></i><a href='cat/"+elem[i]+"'><span>" + elem[i] + "</span></a></font> ";
+								s_files += "<font id='fil_blog'><i class='fas fa-file'></i><a href='https://interhub.org/cat/"+elem[i]+"'><span>" + elem[i] + "</span></a></font> ";
 							}
 
 				            list_files += '<div class="tag"><div id="cont_fil_'+i+'">' + s_files +'<button id="btn_file_rem" onclick="removeFile('+i+');"> X</button></div></div>';
@@ -617,7 +617,7 @@ function lister_files (id, files)
     		var conf_blog = $("#cont_fil_edit_"+i+" > #fil_blog_edit > span").html();
     		removeA(names, conf_blog);
 
-    		var path = "cat/"+conf_blog;
+    		var path = "https://interhub.org/cat/"+conf_blog;
     		$.ajax({
 		      url: 'removefiles_category.php',
 		      type: 'post',
