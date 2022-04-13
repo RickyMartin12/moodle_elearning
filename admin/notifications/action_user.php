@@ -306,7 +306,7 @@ switch ($_POST['action']){
     case '4':
     
     $table=" SELECT * FROM privilegios WHERE id >= 1 AND id <= 2";
-
+      
     $result = mysqli_query($conn, $table);
     while($obj = mysqli_fetch_object($result)) {
     $var[] = $obj;}
