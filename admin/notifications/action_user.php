@@ -158,28 +158,15 @@ switch ($_POST['action']){
         }
 
 
-        $file = $_SERVER['DOCUMENT_ROOT']. '/request/passlist/big_pass_list.txt';
+        /*$file = $_SERVER['DOCUMENT_ROOT']. '/request/passlist/big_pass_list.txt';
         // Open the file to get existing content
         $current = file_get_contents($file);
         // Append a new person to the file
         $current .= "\n".$pass;
         // Write the contents back to the file
-        file_put_contents($file, $current);
+        file_put_contents($file, $current);*/
     
 
-
-    
-    
-     
-
-      
-      
-
-      
-    
-            
-
-              
 
         if (!$err) 
         {
@@ -191,8 +178,7 @@ switch ($_POST['action']){
           while($obj = mysqli_fetch_object($result)) 
           {
             $v[] = $obj;
-
-        }
+          }
 
         $array = json_decode(json_encode($v), True);
 
