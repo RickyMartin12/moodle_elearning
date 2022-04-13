@@ -21,19 +21,7 @@ function is_array_empty($arr){
   }
 }
 
-function array_search_partial($arr, $keyword) {
-  foreach($arr as $index => $string) {
-      if (strpos($string, $keyword) !== FALSE)
-      {
-        return true;
-      }
-      else
-      {
-        return false;
-      }
-          
-  }
-}
+
 
 
 
@@ -185,10 +173,21 @@ switch ($_POST['action']){
 
           $array = json_decode(json_encode($v), True);
 
-          var_dump($array);
+          //var_dump($array);
 
 
-          $r_p_string = array_search_partial($v, $nome_utilizador);
+          //$r_p_string = array_search_partial($v, $nome_utilizador);
+
+          foreach($v as $index => $string) {
+            if (strpos($string, $nome_utilizador) !== false)
+            {
+              $r_p_string = true;
+            }
+            else
+            {
+              $r_p_string = false;
+            }
+          }
 
           echo $r_p_string;
 
