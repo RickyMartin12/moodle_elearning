@@ -232,7 +232,7 @@ switch ($_POST['action']){
               2 = Mensagens ao Cliente e Servidor
             */
 
-            $mail->SMTPDebug = 2;
+            $mail->SMTPDebug = 0;
 
             /*
               Definir o nome do servidor de e-mail
@@ -285,45 +285,10 @@ switch ($_POST['action']){
 
             $mail->send();
 
-
-
-
-
               $r=array('error'=>'','success' => $response,'id' => $last_id, 'nome' => $nome_utilizador);
               echo json_encode($r);
           }
 
-
-          /*if (in_array($nome_utilizador, $v))
-          {
-            $error = "O nome do utilizador encontra-se na base de dados. Deverá adicionar outro nome do utilizador";
-            $r = array('error' =>$error, 'success' =>'', 'nome' => '', 'email' => '');
-            echo json_encode($r);
-          }
-          else
-          {
-            $r = array('error' =>'', 'success' =>'sucesso', 'nome' => '', 'email' => '');
-            echo json_encode($r);
-          }*/
-
-            /*$data_criacao = date("Y-m-d");
-
-            $hora_criacao = date('H:i');
-
-              $sql =" INSERT INTO admins (nome, pass, privilegios, tipo, email, country, departament, skills, logotipo, data_criacao, hora_criacao, data_login, hora_login) VALUES ('$nome_utilizador', MD5('".$pass."'), '$privilegios', '$tipo_utilizador', '$email', '$pais', '$departament', '$skills', '$img_logo', '$data_criacao', '$hora_criacao', '', '')";
-
-            $result = mysqli_query($conn,$sql);
-              if ($result) {
-                $response = 1; 
-                $last_id = mysqli_insert_id($conn);
-              }  
-              else {
-                $response = 0;
-                $last_id = 0; 
-              }
-
-              $r=array('error'=>'','success' => $response,'id' => $last_id, 'nome' => $nome_utilizador);
-              echo json_encode($r);*/
 
 
 
