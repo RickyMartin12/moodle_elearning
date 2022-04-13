@@ -173,7 +173,7 @@ switch ($_POST['action']){
 
           $array = json_decode(json_encode($v), True);
 
-          //var_dump($array);
+          var_dump($array);
 
 
           //$r_p_string = array_search_partial($v, $nome_utilizador);
