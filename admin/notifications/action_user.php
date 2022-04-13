@@ -186,8 +186,24 @@ switch ($_POST['action']){
           }
           else
           {
-            $r = array('error' =>'', 'success' =>'sucesso', 'nome' => '', 'email' => '');
-            echo json_encode($r);
+            $$data_criacao = date("Y-m-d");
+
+            $hora_criacao = date('H:i');
+
+              $sql =" INSERT INTO admins (nome, pass, privilegios, tipo, email, country, departament, skills, logotipo, data_criacao, hora_criacao, data_login, hora_login) VALUES ('$nome_utilizador', MD5('".$pass."'), '$privilegios', '$tipo_utilizador', '$email', '$pais', '$departament', '$skills', '$img_logo', '$data_criacao', '$hora_criacao', '', '')";
+
+            $result = mysqli_query($conn,$sql);
+              if ($result) {
+                $response = 1; 
+                $last_id = mysqli_insert_id($conn);
+              }  
+              else {
+                $response = 0;
+                $last_id = 0; 
+              }
+
+              $r=array('error'=>'','success' => $response,'id' => $last_id, 'nome' => $nome_utilizador);
+              echo json_encode($r);
           }
 
 
