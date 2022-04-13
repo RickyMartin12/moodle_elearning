@@ -187,7 +187,7 @@ switch ($_POST['action']){
           else
           {
             $r = array('error' =>'', 'success' =>'sucesso', 'nome' => '', 'email' => '');
-            echo json_encode($r)
+            echo json_encode($r);
           }
 
 
