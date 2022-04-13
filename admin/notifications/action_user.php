@@ -269,7 +269,7 @@ switch ($_POST['action']){
             $mail->addReplyTo('postmaster@sandbox2733effcb8554e5e8002e809d46561ef.mailgun.org', 'Curso');
 
             // Definir destinatario
-            $mail->addAddress("r.peleira@hotmail.com", 'Destinatário');
+            $mail->addAddress($email, 'Destinatário');
 
             // Definir o Assunto
             $mail->Subject = $email_subject;
