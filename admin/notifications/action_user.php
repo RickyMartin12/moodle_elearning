@@ -173,25 +173,22 @@ switch ($_POST['action']){
 
           $array = json_decode(json_encode($v), True);
 
-          var_dump($array);
+          //var_dump($array);
 
 
           $key_string_users = array_search($nome_utilizador, array_column($array, 'nome'));
 
           if(is_numeric($key_string_users))
           {
-            echo 11;
+            $error = "O nome do utilizador encontra-se na base de dados. Deverá adicionar outro nome do utilizador";
+            $r = array('error' =>$error, 'success' =>'', 'nome' => '', 'email' => '');
+            echo json_encode($r);
           }
           else
           {
-            echo 100;
+            $r = array('error' =>'', 'success' =>'sucesso', 'nome' => '', 'email' => '');
+            echo json_encode($r)
           }
-
-          /*$result_p_string = array_filter($v, function($value) {
-            return strpos($value, $nome_utilizador) !== false;
-          });
-
-          echo $result_p_string;*/
 
 
           /*if (in_array($nome_utilizador, $v))
