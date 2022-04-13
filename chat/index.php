@@ -4,6 +4,7 @@
 <?php
 
 include('database_connection.php');
+echo $_SESSION["login_details_id"];
 
 ?>
 
