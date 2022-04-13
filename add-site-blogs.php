@@ -10,7 +10,7 @@
        			<div class="banner">
 			   
 					<h2>
-					<a href="/moodle/index.php">Home</a>
+					<a href="/index.php">Home</a>
 					<i class="fa fa-angle-right"></i>
 					<a href="#">Site Pages</a> <i class="fa fa-angle-right"></i> <a href="site-blogs.php">Site Blogs</a> <i class="fa fa-angle-right"></i> <span>Add Blog</span>
 					</h2>
