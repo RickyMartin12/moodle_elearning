@@ -9,7 +9,7 @@ session_start();
 $query = "
 UPDATE sessao_logged 
 SET is_type = '".$_POST["is_type"]."' 
-WHERE login_details_id = '".$_SESSION["login_details_id"]."'
+WHERE login_id = '".$_COOKIE["login_id"]."'
 ";
 
 $statement = $connect->prepare($query);
