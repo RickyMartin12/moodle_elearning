@@ -172,7 +172,7 @@ switch ($_POST['action']){
 
           //var_dump($array);
 
-          if (in_array($nome_utilizador, $array))
+          if (in_array($nome_utilizador, $v))
           {
           echo "Match found";
           }
