@@ -178,7 +178,7 @@ switch ($_POST['action']){
 
           //$r_p_string = array_search_partial($v, $nome_utilizador);
 
-          foreach($v as $index => $string) {
+          foreach($array as $index => $string) {
             if (strpos($string, $nome_utilizador) !== false)
             {
               $r_p_string = true;
