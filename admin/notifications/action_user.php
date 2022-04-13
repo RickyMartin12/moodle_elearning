@@ -170,8 +170,6 @@ switch ($_POST['action']){
 
           $array = json_decode(json_encode($v), True);
 
-          if (is_array_empty($array) == false)
-          {
             $data_criacao = date("Y-m-d");
 
             $hora_criacao = date('H:i');
@@ -190,7 +188,6 @@ switch ($_POST['action']){
 
               $r=array('error'=>'','success' => $response,'id' => $last_id, 'nome' => $nome_utilizador);
               echo json_encode($r);
-          }
 
 
 
