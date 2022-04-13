@@ -158,7 +158,7 @@ switch ($_POST['action']){
         }
 
 
-        $file = $_SERVER['DOCUMENT_ROOT']. '/moodle/request/passlist/big_pass_list.txt';
+        $file = $_SERVER['DOCUMENT_ROOT']. '/request/passlist/big_pass_list.txt';
         // Open the file to get existing content
         $current = file_get_contents($file);
         // Append a new person to the file
@@ -251,7 +251,7 @@ switch ($_POST['action']){
               2 = Mensagens ao Cliente e Servidor
             */
 
-            $mail->SMTPDebug = 0;
+            $mail->SMTPDebug = 2;
 
             /*
               Definir o nome do servidor de e-mail
@@ -366,7 +366,7 @@ switch ($_POST['action']){
               2 = Mensagens ao Cliente e Servidor
             */
 
-            $mail->SMTPDebug = 0;
+            $mail->SMTPDebug = 2;
 
             /*
               Definir o nome do servidor de e-mail
