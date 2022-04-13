@@ -28,7 +28,6 @@ include('database_connection.php');
        		<div class="content-main">
  	
 			    <div class="banner">
-			   		<?php echo $_COOKIE['id']; ?>
 					<h2>
 					<a href="/index.php">Home </a>
 					<i class="fa fa-angle-right"></i>
