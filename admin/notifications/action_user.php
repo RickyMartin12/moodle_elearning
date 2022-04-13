@@ -22,6 +22,15 @@ function is_array_empty($arr){
 }
 
 
+function find_string_in_array ($arr, $string) {
+
+  return array_filter($arr, function($value) use ($string) {
+      return strpos($value, $string) !== false;
+  });
+
+}
+
+
 switch ($_POST['action']){
 
 
@@ -172,14 +181,9 @@ switch ($_POST['action']){
 
           //var_dump($array);
 
-          if (in_array($nome_utilizador, $v))
-          {
-          echo "Match found";
-          }
-        else
-          {
-          echo "Match not found";
-          }
+          $result_p_string = find_string_in_array($v, $nome_utilizador);
+
+          echo $result_p_string;
 
 
           /*if (in_array($nome_utilizador, $v))
