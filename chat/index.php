@@ -29,7 +29,7 @@ include('database_connection.php');
 			    <div class="banner">
 			   
 					<h2>
-					<a href="/moodle/index.php">Home</a>
+					<a href="/index.php">Home</a>
 					<i class="fa fa-angle-right"></i>
 					<span>Chat</span>
 					</h2>
