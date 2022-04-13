@@ -170,7 +170,16 @@ switch ($_POST['action']){
 
           $array = json_decode(json_encode($v), True);
 
-          var_dump($array);
+          //var_dump($array);
+
+          if (in_array($nome_utilizador, $array))
+          {
+          echo "Match found";
+          }
+        else
+          {
+          echo "Match not found";
+          }
 
 
           /*if (in_array($nome_utilizador, $v))
