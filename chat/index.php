@@ -50,9 +50,8 @@ include('database_connection.php');
 			<div class="copy">
 	            <p> &copy; 2019 Concept Moodle. All Rights Reserved | Design by <a href="https://concept.shijigroup.com/en/" target="_blank">Concept S.A.</a> </p>
 		    </div>
-			</div>
 			<div class="clearfix"> </div>
-			</div>
+		</div>
 <style>
 
 .chat_message_area
