@@ -173,13 +173,13 @@ switch ($_POST['action']){
 
           $array = json_decode(json_encode($v), True);
 
-          //var_dump($array);
+          var_dump($array);
 
-          $result_p_string = array_filter($v, function($value) {
+          /*$result_p_string = array_filter($v, function($value) {
             return strpos($value, $nome_utilizador) !== false;
           });
 
-          echo $result_p_string;
+          echo $result_p_string;*/
 
 
           /*if (in_array($nome_utilizador, $v))
