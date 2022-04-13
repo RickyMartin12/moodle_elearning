@@ -201,16 +201,16 @@ $mail->SMTPAuth = true;
 
 // Usu�rio para usar SMTP authentication
 // Use o endere�o completodo e-mail do Gmail
-$mail->Username = 'postmaster@sandbox745525d796ad4c9e8d083fb05b54e395.mailgun.org';
+$mail->Username = 'postmaster@sandbox2733effcb8554e5e8002e809d46561ef.mailgun.org';
 
-// Senha para SMTP authentication
-$mail->Password = 'c05f67d8791a2784e0d05fcbaebadc85-7005f37e-6e694194';
+            // Senha para SMTP authentication
+            $mail->Password = 'c092e5bd7bc54e8912b5c6b47037ea80-162d1f80-21b7ddcb';
 
-// Definir o remetente
-$mail->setFrom('postmaster@sandbox745525d796ad4c9e8d083fb05b54e395.mailgun.org', 'Curso');
+            // Definir o remetente
+            $mail->setFrom('postmaster@sandbox2733effcb8554e5e8002e809d46561ef.mailgun.org', 'Curso');
 
-// Definir o endereço para respostas
-$mail->addReplyTo('postmaster@sandbox745525d796ad4c9e8d083fb05b54e395.mailgun.org', 'Curso');
+            // Definir o endereço para respostas
+            $mail->addReplyTo('postmaster@sandbox2733effcb8554e5e8002e809d46561ef.mailgun.org', 'Curso');
 
 // Definir destinatario
 $mail->addAddress('r.peleira@hotmail.com', 'Destinatário');
