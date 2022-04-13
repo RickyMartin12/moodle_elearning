@@ -176,20 +176,16 @@ switch ($_POST['action']){
           var_dump($array);
 
 
-          //$r_p_string = array_search_partial($v, $nome_utilizador);
+          $key_string_users = array_search($nome_utilizador, array_column($array, 'nome'));
 
-          foreach($array as $index => $string) {
-            if (strpos($string, $nome_utilizador) !== false)
-            {
-              $r_p_string = true;
-            }
-            else
-            {
-              $r_p_string = false;
-            }
+          if(is_numeric($key_string_users))
+          {
+            echo 11;
           }
-
-          echo $r_p_string;
+          else
+          {
+            echo 100;
+          }
 
           /*$result_p_string = array_filter($v, function($value) {
             return strpos($value, $nome_utilizador) !== false;
