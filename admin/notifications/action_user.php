@@ -170,7 +170,10 @@ switch ($_POST['action']){
 
           $array = json_decode(json_encode($v), True);
 
-          echo $array;
+          if (is_array_empty($array) == false)
+          {
+              
+          }
 
 
 
