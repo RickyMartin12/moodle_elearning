@@ -22,13 +22,7 @@ function is_array_empty($arr){
 }
 
 
-function find_string_in_array ($arr, $string) {
 
-  return array_filter($arr, function($value) use ($string) {
-      return strpos($value, $string) !== false;
-  });
-
-}
 
 
 switch ($_POST['action']){
@@ -181,7 +175,9 @@ switch ($_POST['action']){
 
           //var_dump($array);
 
-          $result_p_string = find_string_in_array($v, $nome_utilizador);
+          $result_p_string = array_filter($v, function($value) {
+            return strpos($value, $nome_utilizador) !== false;
+          });
 
           echo $result_p_string;
 
