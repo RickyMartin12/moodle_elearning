@@ -4,7 +4,7 @@
 <?php
 
 include('database_connection.php');
-echo $_SESSION["login_details_id"];
+
 
 ?>
 
@@ -30,7 +30,7 @@ echo $_SESSION["login_details_id"];
 			    <div class="banner">
 			   
 					<h2>
-					<a href="/index.php">Home</a>
+					<a href="/index.php">Home <?php echo $_SESSION["login_details_id"]; ?></a>
 					<i class="fa fa-angle-right"></i>
 					<span>Chat</span>
 					</h2>
