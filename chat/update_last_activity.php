@@ -11,7 +11,7 @@ session_start();
 $query = "
 UPDATE sessao_logged 
 SET last_activity = now() 
-WHERE login_details_id = '".$_SESSION["login_details_id"]."'
+WHERE login_details_id = '".$_SESSION["login_id"]."'
 ";
 
 $statement = $connect->prepare($query);
