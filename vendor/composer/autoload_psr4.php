@@ -10,5 +10,8 @@ return array(
     'Psr\\Log\\' => array($vendorDir . '/psr/log/Psr/Log'),
     'PHPMailer\\PHPMailer\\' => array($vendorDir . '/phpmailer/phpmailer/src'),
     'Mpdf\\' => array($vendorDir . '/mpdf/mpdf/src'),
+    'League\\MimeTypeDetection\\' => array($vendorDir . '/league/mime-type-detection/src'),
+    'League\\Flysystem\\Ftp\\' => array($vendorDir . '/league/flysystem-ftp'),
+    'League\\Flysystem\\' => array($vendorDir . '/league/flysystem/src'),
     'DeepCopy\\' => array($vendorDir . '/myclabs/deep-copy/src/DeepCopy'),
 );

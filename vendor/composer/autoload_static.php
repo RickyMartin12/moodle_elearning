@@ -24,6 +24,12 @@ class ComposerStaticInit0ec7beeccd6c43e3f9e1e0caad6cc8d0
         array (
             'Mpdf\\' => 5,
         ),
+        'L' => 
+        array (
+            'League\\MimeTypeDetection\\' => 25,
+            'League\\Flysystem\\Ftp\\' => 21,
+            'League\\Flysystem\\' => 17,
+        ),
         'D' => 
         array (
             'DeepCopy\\' => 9,
@@ -46,6 +52,18 @@ class ComposerStaticInit0ec7beeccd6c43e3f9e1e0caad6cc8d0
         'Mpdf\\' => 
         array (
             0 => __DIR__ . '/..' . '/mpdf/mpdf/src',
+        ),
+        'League\\MimeTypeDetection\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/league/mime-type-detection/src',
+        ),
+        'League\\Flysystem\\Ftp\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/league/flysystem-ftp',
+        ),
+        'League\\Flysystem\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/league/flysystem/src',
         ),
         'DeepCopy\\' => 
         array (
