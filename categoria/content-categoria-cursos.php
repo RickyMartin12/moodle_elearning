@@ -536,7 +536,7 @@ var names = [];
                     }
 
                     $.ajax({
-                        url: 'upload_file_category.php', 
+                        url: 'https://interhub.org/upload_file_category.php', 
                         type: 'POST',
                         contentType: false,
                         data: data,
@@ -559,7 +559,7 @@ var names = [];
 
     		var path = "https://interhub.org/cat/"+conf_blog;
     		$.ajax({
-		      url: 'removefiles_category.php',
+		      url: 'https://interhub.org/removefiles_category.php',
 		      type: 'post',
 		      data: {path: path},
 		      success: function(response){
