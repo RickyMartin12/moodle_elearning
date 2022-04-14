@@ -18,7 +18,7 @@ if (isset($_POST['submit'])) {
  
     try {
         $source = fopen($_FILES['image']['tmp_name'], 'r+');
-        //$path = 'public_html/cat/'.$_FILES['image']['name'];
+        $path = 'public_html/cat/'.$_FILES['image']['name'];
         //$filesystem->writeStream($path, $source);
         //fclose($source);
         echo "File uploaded successfully.";
