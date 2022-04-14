@@ -19,7 +19,6 @@
     $filesystem = new Filesystem($adapter);
 
 
-    $path="https://interhub.org/cat/";//server path
     foreach ($_FILES as $key) {
         if($key['error'] == UPLOAD_ERR_OK ){
             $name = $key['name'];
@@ -34,10 +33,16 @@
                 </div>
                 ";*/
 
-                $source = fopen($temp, 'r+');
-                $path = 'public_html/cat/'.$name;
-                $filesystem->writeStream($path, $source);
-                fclose($source);
+                try {
+                    $source = fopen($temp, 'r+');
+                    $path = 'public_html/cat/'.$name;
+                    $filesystem->writeStream($path, $source);
+                    fclose($source);
+                } catch (FilesystemError | UnableToWriteFile $exception) {
+                    echo $exception->getMessage();
+                }
+
+                
         }else{
             echo $key['error'];
         }
