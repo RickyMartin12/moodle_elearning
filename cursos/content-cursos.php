@@ -99,7 +99,7 @@
 
 			        </div>
 			        <div class="modal-footer">
-			        	<p style='text-align:center; margin:0;'><img src="/moodle/images/cs.png" class="logo-nav" style="width:68px;"></p>
+			        	<p style='text-align:center; margin:0;'><img src="https://moodle-elearrning.herokuapp.com/images/cs.png" class="logo-nav" style="width:68px;"></p>
 				        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times-circle" aria-hidden="true"> </i><font class="hidden-xs"> Cancel</font></button>
 	                    <button title="Guardar as alterações do blogue" type="button" class="btn btn-success" onclick="saveCourse();"> <span class="glyphicon glyphicon-save-file"></span><font class="hidden-xs"> Save</font></button>
 			        </div>
@@ -139,7 +139,7 @@
 
 			        </div>
 			        <div class="modal-footer">
-			        	<p style='text-align:center; margin:0;'><img src="/moodle/images/cs.png" class="logo-nav" style="width:68px;"></p>
+			        	<p style='text-align:center; margin:0;'><img src="https://moodle-elearrning.herokuapp.com/images/cs.png" class="logo-nav" style="width:68px;"></p>
 				        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times-circle" aria-hidden="true"> </i><font class="hidden-xs"> Cancel</font></button>
 	                    <button title="Guardar as alterações do blogue" type="button" class="btn btn-success" onclick="saveSubNomeCourse();"> <span class="glyphicon glyphicon-save-file"></span><font class="hidden-xs"> Save</font></button>
 			        </div>
@@ -324,7 +324,7 @@ function saveCourse()
                             $(".load").show();
                         $('.debug-url').html('Course name '+nome_curso+' was created sucessfully.');
                           var obj = document.createElement("audio");
-						  obj.src = "/moodle/Sound/success.mp3";
+						  obj.src = "https://moodle-elearrning.herokuapp.com/Sound/success.mp3";
 						  obj.volume = 0.1;
 						  obj.autoPlay = false;
 						  obj.preLoad = true;
