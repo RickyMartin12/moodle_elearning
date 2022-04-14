@@ -21,9 +21,6 @@
 
     foreach ($_FILES as $key) {
 
-        echo $key['name'];
-
-        /*if($key['error'] == UPLOAD_ERR_OK ){
             $name = $key['name'];
             $temp = $key['tmp_name'];
             $size= ($key['size'] / 1000)."Kb";
@@ -36,6 +33,9 @@
                 } catch (FilesystemError | UnableToWriteFile $exception) {
                     echo $exception->getMessage();
                 }
+
+        /*if($key['error'] == UPLOAD_ERR_OK ){
+            
 
                 
         }else{
