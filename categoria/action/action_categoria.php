@@ -221,7 +221,6 @@ switch ($_POST['action'])
 
       if (!$err) 
     {
-
       $sql = "UPDATE cursos_videos SET cursos_id='$id_cursos', categoria='$category_course', funcoes='$funcoes_course', contexto='$contexto_course', ficheiro='$ficheiros' WHERE id=$id";
 
 

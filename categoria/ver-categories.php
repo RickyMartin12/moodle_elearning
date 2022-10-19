@@ -4,7 +4,6 @@
        		<div class="content-main">
  	
 			    <div class="banner">
-			   
 					<h2>
 					<a href="/index.php">Home</a>
 					<i class="fa fa-angle-right"></i>

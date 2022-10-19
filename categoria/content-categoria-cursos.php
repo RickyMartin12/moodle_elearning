@@ -1426,8 +1426,6 @@ function function_content(id)
 
 	            		var files_upl = ficheiro_vid_img.split(";");
 
-
-
 	            		for(var i=0; i< files_upl.length; i++)
 		        		{
 		        			var fileExtension = files_upl[i].substr((files_upl[i].lastIndexOf('.') + 1));
