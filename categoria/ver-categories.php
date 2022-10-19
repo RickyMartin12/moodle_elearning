@@ -10,7 +10,6 @@
 					<span>Visualize Categories</span>
 					</h2>
 			    </div>
-
 			     <div class="content-top">
 					<div class="profile row">
 						<div class="col-md-12">

@@ -1418,7 +1418,6 @@ function function_content(id)
 		        		}
 
 	            		
-	            		
 
 	            		$(".info_act").html(arr[i].contexto);
 

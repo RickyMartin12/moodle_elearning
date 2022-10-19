@@ -17,7 +17,6 @@ if( file_exists($path) ){
   // Set status
   $return_text = 0;
 }
-
 // Return status
 echo $return_text;
 

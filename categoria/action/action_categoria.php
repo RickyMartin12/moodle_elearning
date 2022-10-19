@@ -223,8 +223,6 @@ switch ($_POST['action'])
     {
       $sql = "UPDATE cursos_videos SET cursos_id='$id_cursos', categoria='$category_course', funcoes='$funcoes_course', contexto='$contexto_course', ficheiro='$ficheiros' WHERE id=$id";
 
-
-
             $result = mysqli_query($conn,$sql);
               if ($result) {
                 $response = 1; 
