@@ -608,6 +608,10 @@ function saveGrade(id)
 			  });
 
 
+			  
+			  
+			  
+			  
 
 	    		edit_grades.modal('hide');
 
