@@ -1,5 +1,4 @@
 <?php
-
     $path="https://interhub.org/cat/";//server path
     foreach ($_FILES as $key) {
         if($key['error'] == UPLOAD_ERR_OK ){
