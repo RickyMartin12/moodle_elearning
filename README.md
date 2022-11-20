@@ -6,6 +6,10 @@ Wamp Server - wamp/www/<moodle_elearning>
 
 Xampp - xampp/htdocs/<moodle_elearning>
 
+#### Site unconstruction (missing features - send email): https://moodle-elearrning.herokuapp.com/
+
+Username: Ricardo Peleira; Password: admin
+
 ## Functions Lists in Web App
 
 ## User Page (User Permissions)
