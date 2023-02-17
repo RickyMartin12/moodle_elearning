@@ -6,7 +6,7 @@ Wamp Server - wamp/www/<moodle_elearning>
 
 Xampp - xampp/htdocs/<moodle_elearning>
 
-#### Site test: https://moodle-elearrning.herokuapp.com/
+#### Site test: https://moodle-elearrning.herokuapp.com/ (site with error in heroku server) (try to figure out. Maybe in Amen or Hostingerif the heroku server is not available in this moment)
 
 Username: Ricardo Peleira; Password: admin
 
