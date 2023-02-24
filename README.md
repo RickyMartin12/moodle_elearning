@@ -6,9 +6,9 @@ Wamp Server - wamp/www/<moodle_elearning>
 
 Xampp - xampp/htdocs/<moodle_elearning>
 
-#### Site test: https://moodle-elearning-conceptek-production.up.railway.app/index.php
+#### Site test: https://bd-moodle.herokuapp.com/index.php
 
-Username: Ricardo Peleira; Password: admin
+Username: Ricardo Peleira; Password: ast_loka
 
 ## Functions Lists in Web App
 
